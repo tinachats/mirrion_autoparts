@@ -1,0 +1,146 @@
+:root {
+  --font-family: 'Titillium Web', sans-serif;
+  --primary-color: #da0c28;
+}
+
+html, body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titillium-web-extralight {
+  font-family: var(--font-family);
+  font-weight: 200;
+  font-style: normal;
+}
+
+.titillium-web-light {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+  font-family: var(--font-family);
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light-italic {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular-italic {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold-italic {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  height: 70px;
+}
+
+a:hover, a:focus, a:active, a* {
+  color: black;
+}
+/* Logo Container */
+.logo-container {
+  display: block;
+  text-align: center;
+  background-color: var(--primary-color);
+  font-family: "Orbitron", sans-serif;;
+  color: white;
+  padding: .5rem;
+  height: 70px;
+}
+
+.logo-container>.logo-title {
+  color: transparent;
+  line-height: 1.2;
+  -webkit-text-stroke: 2px white;
+  -moz-text-stroke: 2px white;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.logo-container:hover .logo-title {
+  -webkit-text-stroke: 2px black;
+  -moz-text-stroke: 2px black;
+}
+
+.logo-container>.logo-subtitle {
+  font-size: .75rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.form-control, .btn {
+  border-radius: 0 !important;
+}
+
+.form-control:focus {
+  border-color: #fe8690;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(253, 13, 33, 0.25);
+}
+
+#search-input {
+  position: relative;
+  width: fit-content;
+}
+
+#search-input>.form-control {
+  width: 400px;
+  transition: width 0.4s ease-in-out;
+  padding-left: 11%;
+}
+
+#search-input>.bi-search {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
