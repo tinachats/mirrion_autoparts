@@ -35,7 +35,7 @@
                     <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
                 </a>
                 <!-- Product Categories -->
-                <ul class="dropdown-menu product-categories-list show">
+                <ul class="dropdown-menu d-none d-md-block product-categories-list show">
                     <li class="dropdown-item">Cylinder Block</li>
                     <li class="dropdown-item">Pistons</li>
                     <li class="dropdown-item">Crankshaft</li>
@@ -88,7 +88,7 @@
                 <div class="col-lg-3"></div>
                 <div class="col-lg-7 my-lg-5">
                     <!-- Hero Content -->
-                    <div class="swiper hero-content-slider pb-5">
+                    <div class="swiper hero-content-slider mt-3 mt-lg-0 pb-5">
                         <div class="swiper-wrapper">
                             <!-- First Slide -->
                             <div class="swiper-slide">
@@ -441,7 +441,7 @@
         <!-- Section Title -->
         <div class="d-block mb-3">
             <h2 class="titillium-web-bold">Popular Engine Parts</h2>
-            <p class="text-sm text-muted">Shop high-quality parts engineered for precision and endurance</p>
+            <p class="text-sm text-muted">High quality parts for precision and endurance</p>
             <div class="title-line-wrapper">
                 <div class="title-box"></div>
                 <hr class="title-line">
@@ -701,9 +701,7 @@
             },
         });
 
-        var featuredProductSwiper = new Swiper('.products-slider', {
-            slidesPerView: 5,
-            spaceBetween: 5,
+        var productSwiper = new Swiper('.products-slider', {
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -711,6 +709,24 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                578: {
+                    slidesPerView: 2,
+                    spaceBetween: 5,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1400: {
+                    slidesPerView: 5,
+                    spaceBetween: 5,
+                },
             },
         });
     </script>
