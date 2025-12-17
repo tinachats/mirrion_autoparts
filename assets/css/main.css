@@ -396,8 +396,12 @@ a:hover, a:focus, a:active, a.active, a* {
   }
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+/* Large devices (iPads, 1024px and up */
+@media (min-width: 1024px) {
+  /* Navbar */
+  .navbar {
+    height: 70px;
+  }
   /* Logo Container */
   .logo-container {
     height: 70px;
@@ -408,6 +412,15 @@ a:hover, a:focus, a:active, a.active, a* {
     margin-top: 8rem;
   }
 
+  /* Search Input */
+  #search-input>.form-control {
+    width: 320px; 
+    padding-left: 9%;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
   /* Search Input */
   #search-input>.form-control {
     width: 400px; 
