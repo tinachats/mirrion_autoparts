@@ -33,8 +33,8 @@
     <header class="header bg-white border-bottom shadow-sm fixed-top mb-5">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-white border-body border-bottom p-0 t-0" data-bs-theme="light">
-            <div class="container-md">
-                <a class="btn bg-white d-md-none" data-bs-toggle="offcanvas" href="#side-bar" role="button" aria-controls="side-bar">
+            <div class="container-lg">
+                <a class="btn bg-white d-md-none" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
                     <i class="bi bi-list fw-bold fs-5"></i>
                 </a>
                 <a class="navbar-brand logo-container text-capitalize text-center m-0 p-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="true">
@@ -89,27 +89,46 @@
     <!-- /.Header -->
 
     <!-- Side Bar -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="side-bar" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas offcanvas-start sidebar-menu" tabindex="-1" id="sidebar" aria-labelledby="sidebar-menu">
+        <div class="offcanvas-header border-bottom m-0 p-0">
+            <h5 class="offcanvas-title" id="sidebar-menu">
+                 <div class="navbar-brand logo-container text-capitalize text-center p-1">
+                    <h4 class="text-danger logo-title m-0 p-0">M.T.M</h4>
+                    <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
+                </div>
+            </h5>
         </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Shop</a>
+        <div class="offcanvas-body p-0 m-0">
+            <ul class="list-group me-auto rounded-0 m-0 p-0">
+                <li class="list-group-item">
+                    <a href="category.html">
+                        <i class="bi bi-tools me-3"></i>
+                        Used Parts
+                    </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">New Arrivals</a>
+                <li class="list-group-item">
+                    <a href="category.html">
+                        <i class="bi bi-fire me-3"></i>
+                        New Arrivals
+                    </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Special Offers</a>
+                <li class="list-group-item">
+                    <a href="category.html">
+                        <i class="bi bi-lightning me-3"></i>
+                        Special Offers
+                    </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                <li class="list-group-item">
+                    <a href="about.html">
+                        <i class="bi bi-info-circle me-3"></i>
+                        About Us
+                    </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                <li class="list-group-item">
+                    <a href="contact.html">
+                        <i class="bi bi-telephone-outbound me-3"></i>
+                        Contact Us
+                    </a>
                 </li>
             </ul>
         </div>
@@ -118,8 +137,8 @@
 
     <!-- Hero Section -->
     <section class="hero-section" id="home"> 
-        <div class="container my-lg-5">
-            <div class="row align-items-start gx-5">
+        <div class="container-lg my-lg-5">
+            <div class="row align-items-start gx-3">
                 <!-- Shop Sales Metrics -->
                 <div class="col-lg-4 col-xl-3 order-md-2 order-lg-1 d-none d-lg-block">
                     <div class="d-block text-start mt-3">
@@ -280,7 +299,7 @@
     <!-- /.Hero Section -->
 
     <!-- Product Section -->
-    <div class="container-xl mt-3 mt-0" id="products">
+    <div class="container-lg mt-3 mt-0" id="products">
         <!-- Section Title -->
         <div class="d-block mb-3" data-aos="fade-up">
             <h5 class="titillium-web-bold">Featured Engine Parts</h5>
@@ -515,7 +534,7 @@
     <!-- /.Product Section -->
 
     <!-- Popular Products Section -->
-    <div class="container-xl mt-3 mt-0" id="popular-products">
+    <div class="container-lg mt-3 mt-0" id="popular-products">
         <!-- Section Title -->
         <div class="d-block" data-aos="fade-up">
             <h5 class="titillium-web-bold">Popular Engine Parts</h5>
@@ -751,9 +770,9 @@
 
      <!-- Categories Section -->
     <section id="categories" class="py-3 bg-light">
-        <div class="container-xl">
+        <div class="container-lg">
             <h5 class="titillium-web-bold">Engine Parts Categories</h5>
-            <div class="row mt-4">
+            <div class="row justify-content-lg-between mt-4">
                 <div class="col-md-4 mb-4 scroll-animate">
                     <div class="card h-100 radius-0 shadow-sm">
                         <a href="category.html" class="stretched-link"></a>
@@ -791,7 +810,7 @@
 
     <!-- Footer -->
     <footer class="footer bg-dark border-top text-white pt-5" id="contact">
-        <div class="container-xl">
+        <div class="container-lg">
             <div class="row gx-5">
                 <div class="col-12 col-md-4 mb-3">
                     <div class="navbar-brand logo-container text-capitalize text-center m-0 p-1">

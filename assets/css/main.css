@@ -19,6 +19,10 @@ html, body {
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Buttons */
 .btn-lg {
   font-weight: 600;
@@ -250,11 +254,24 @@ a:hover, a:focus, a:active, a.active, a* {
   transform: translateY(0);
 }
 
+ /* Side Menu */
+  .sidebar-menu {
+    width: 300px !important;
+  }
+
+  .sidebar-menu .list-group .list-group-item>a {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 /*** Media Queries ***/
 /* Small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) {
   /* Navbar */
-  .navbar {
+  .offcanvas-header, .navbar {
     height: 50px;
   }
 
@@ -399,7 +416,7 @@ a:hover, a:focus, a:active, a.active, a* {
 /* Large devices (iPads, 1024px and up */
 @media (min-width: 1024px) {
   /* Navbar */
-  .navbar {
+  .offcanvas-header, .navbar {
     height: 70px;
   }
   /* Logo Container */
@@ -416,6 +433,17 @@ a:hover, a:focus, a:active, a.active, a* {
   #search-input>.form-control {
     width: 320px; 
     padding-left: 9%;
+  }
+
+   /* Product Card */
+  .product-card {
+    height: 320px;
+    width: 230px;
+  }
+
+  .product-card .product-img-container{
+    position: relative;
+    height: 180px;
   }
 }
 
