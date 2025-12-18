@@ -29,784 +29,788 @@
 </head>
 
 <body class="bg-light">
-    <!-- Header -->
-    <header class="header bg-white border-bottom shadow-sm fixed-top mb-5">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-white border-body border-bottom p-0 t-0" data-bs-theme="light">
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header bg-white border-bottom shadow-sm fixed-top mb-5">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-white border-body border-bottom p-0 t-0" data-bs-theme="light">
+                <div class="container-lg">
+                    <a class="btn bg-white d-md-none" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
+                        <i class="bi bi-list fw-bold fs-5"></i>
+                    </a>
+                    <a class="navbar-brand logo-container text-capitalize text-center m-0 p-1" href="#" role="button">
+                        <h4 class="text-danger logo-title m-0 p-0">M.T.M</h4>
+                        <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
+                    </a>
+                    <a class="btn bg-white d-md-none" data-bs-toggle="offcanvas" href="#search-page" role="button" aria-controls="search-page">
+                        <i class="bi bi-search fw-bold fs-5"></i>
+                    </a>
+                    <form class="d-none d-md-flex" id="search-input" role="search">
+                        <input class="form-control mx-2" type="search" placeholder="Search part..." aria-label="Search"/>
+                        <i class="bi bi-search"></i>
+                    </form>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <ul class="navbar-nav">
+                            <li class="nav-item d-none d-lg-inline-block">
+                                <a class="nav-link active" aria-current="page" href="#">New Arrivals</a>
+                            </li>
+                            <li class="nav-item d-none d-md-inline-block">
+                                <a class="nav-link" href="special-offers.html">Special Offers</a>
+                            </li>
+                            <li class="nav-item d-none d-md-inline-block">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item d-none d-md-inline-block">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- /.Navbar -->
+
+            <!-- Nav Scroller -->
+            <div class="nav-scroller container"> 
+                <nav class="nav" aria-label="Secondary navigation"> 
+                    <a class="nav-link active" aria-current="page" href="#home">Shop</a> 
+                    <a class="nav-link" href="category.html">Cylinder Blocks</a> 
+                    <a class="nav-link" href="category.html">Pistons</a> 
+                    <a class="nav-link" href="category.html">Crankshafts</a> 
+                    <a class="nav-link" href="category.html">Camshafts</a> 
+                    <a class="nav-link" href="category.html">Cylinder Heads</a> 
+                    <a class="nav-link" href="category.html">Valves</a> 
+                    <a class="nav-link" href="category.html">Spark Plugs</a> 
+                    <a class="nav-link" href="category.html">Fuel Injectors</a> 
+                    <a class="nav-link" href="category.html">Connecting Rods</a> 
+                    <a class="nav-link" href="category.html">Timing Belts</a> 
+                </nav> 
+            </div>
+            <!-- /.Nav Scroller -->
+        </header>
+        <!-- /.Header -->
+
+        <!-- Side Bar -->
+        <div class="offcanvas offcanvas-start sidebar-menu" tabindex="-1" id="sidebar" aria-labelledby="sidebar-menu">
+            <div class="offcanvas-header border-bottom m-0 p-0">
+                <h5 class="offcanvas-title" id="sidebar-menu">
+                    <div class="navbar-brand logo-container text-capitalize text-center p-1">
+                        <h4 class="text-danger logo-title m-0 p-0">M.T.M</h4>
+                        <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
+                    </div>
+                </h5>
+            </div>
+            <div class="offcanvas-body p-0 m-0">
+                <ul class="list-group me-auto rounded-0 m-0 p-0">
+                    <li class="list-group-item">
+                        <a href="category.html">
+                            <i class="bi bi-tools me-3"></i>
+                            Used Parts
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="category.html">
+                            <i class="bi bi-fire me-3"></i>
+                            New Arrivals
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="category.html">
+                            <i class="bi bi-lightning me-3"></i>
+                            Special Offers
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="about.html">
+                            <i class="bi bi-info-circle me-3"></i>
+                            About Us
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="contact.html">
+                            <i class="bi bi-telephone-outbound me-3"></i>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.Side Bar -->
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home"> 
+            <div class="container-lg my-lg-5">
+                <div class="row align-items-start gx-3">
+                    <!-- Shop Sales Metrics -->
+                    <div class="col-lg-4 col-xl-3 order-md-2 order-lg-1 d-none d-lg-block">
+                        <div class="d-block text-start mt-3">
+                            <h6 class="fw-bold">Discover engine parts you love</h6>
+                            <small class="text-sm text-muted text-justify">
+                                Be the first to know with M.T.M's insider guides, deep dives on old special offers, 
+                                and vital intel on all the latest and greatest new engine spare parts..
+                            </small>
+                            <hr>
+                            <address>
+                                <small class="text-muted fw-bold">M.T.M Auto Spares</small><br>
+                                <small class="text-muted">45 Kaguvi City Mall, Shop G3</small><br>
+                                <a class="small text-muted" href="tel:+263772123456">+263 772 262 5028</a><br>
+                                <a class="small text-muted" href="mailto:info@mtmspares.co.zw">info@mtmspares.co.zw</a><br>
+                                <a class="small text-muted" href="https://maps.google.com/?q=Kaguvi+City+Mall+Harare+Zimbabwe" rel="noopener">Find us on Maps</a><br>
+                            </address>
+                            <div class="d-flex align-items-center mt-2">
+                                <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set">
+                                    <i class="bi bi-whatsapp fs-4 text-muted"></i>
+                                </a>
+                                <a href="http://m.me/263772625028">
+                                    <i class="bi bi-facebook fs-4 text-muted mx-3"></i>
+                                </a>
+                                <a href="">
+                                    <i class="bi bi-instagram fs-4 text-muted"></i>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <i class="material-icons text-danger" style="font-size:7rem;transform:rotate(45deg)">arrow_upward</i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.Shop Sales Metrics -->
+
+                    <div class="col-lg-8 col-xl-7 order-md-1 order-lg-2">
+                        <!-- Hero Content -->
+                        <div class="swiper hero-content-slider mt-3 mt-lg-0 pb-0 pb-lg-5">
+                            <div class="swiper-wrapper">
+                                <!-- First Slide -->
+                                <div class="swiper-slide">
+                                    <div class="row align-items-center gx-0 mx-0">
+                                        <div class="col-md-6 col-lg-7 text-start mb-5">   
+                                            <h1 class="hero-title scroll-animate titillium-web-bold">
+                                                Premium Engine Parts for <span class="text-danger">Peak Performance</span>
+                                            </h1>
+                                            <p class="lead mb-4 scroll-animate" style="transition-delay: 0.2s">
+                                                High quality automotive components with expert support. 
+                                                Find the perfect part for your vehicle from our extensive collection.
+                                            </p>
+                                            <div class="d-flex justify-content-center justify-content-lg-start">
+                                                <a href="#products" class="btn btn-danger btn-lg w-50 scroll-animate" style="transition-delay: 0.4s">Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-5 carousel-img-container my-3 my-lg-0">
+                                            <img src="assets/images/products/carousel-img-1.png" alt="Carousel Image 1" class="hero-slider-img img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.First Slide -->
+
+                                <!-- Second Slide -->
+                                <div class="swiper-slide">
+                                    <div class="row align-items-center gx-0 mx-0">
+                                        <div class="col-md-6 col-lg-7 text-start">   
+                                            <h1 class="hero-title scroll-animate titillium-web-bold">
+                                                Precision Engine Parts for <span class="text-danger">Every Drive</span> 
+                                            </h1>
+                                            <p class="lead mb-4 scroll-animate" style="transition-delay: 0.2s">
+                                                Durable, performance-tested components backed by expert guidance. 
+                                                Explore our wide range of parts built to keep your vehicle running stronger, longer.
+                                            </p>
+                                            <div class="d-flex justify-content-center justify-content-lg-start">
+                                                <a href="#products" class="btn btn-danger btn-lg w-50 scroll-animate" style="transition-delay: 0.4s">Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-5 carousel-img-container my-3 my-lg-0">
+                                            <img src="assets/images/products/carousel-img-2.png" alt="Carousel Image 2" class="hero-slider-img img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.Second Slide -->
+
+                                <!-- Third Slide -->
+                                <div class="swiper-slide">
+                                    <div class="row align-items-center gx-0 mx-0">
+                                        <div class="col-md-6 col-lg-7 text-start">   
+                                            <h1 class="hero-title scroll-animate titillium-web-bold">
+                                                Power Your Journey with <span class="text-danger">Trusted Parts</span> 
+                                            </h1>
+                                            <p class="lead mb-4 scroll-animate" style="transition-delay: 0.2s">
+                                                From pistons to turbochargers, discover premium automotive solutions designed for 
+                                                reliability and peak performance. 
+                                                Find exactly what your engine needs today.
+                                            </p>
+                                            <div class="d-flex justify-content-center justify-content-lg-start">
+                                                <a href="#products" class="btn btn-danger btn-lg w-50 scroll-animate" style="transition-delay: 0.4s">Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-5 carousel-img-container my-3 my-lg-0">
+                                            <img src="assets/images/products/carousel-img-3.png" alt="Carousel Image 3" class="hero-slider-img img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.Third Slide -->
+
+                                <!-- Fourth Slide -->
+                                <div class="swiper-slide">
+                                    <div class="row align-items-center gx-0 mx-0">
+                                        <div class="col-md-6 col-lg-7 text-start">   
+                                            <h1 class="hero-title scroll-animate titillium-web-bold">
+                                                Drive Strong with <span class="text-danger">Genuine Engine Components</span> 
+                                            </h1>
+                                            <p class="lead mb-4 scroll-animate" style="transition-delay: 0.2s">
+                                                Your one-stop destination for top-grade automotive parts. 
+                                                Get the perfect fit for your car, backed by trusted expertise and 
+                                                unbeatable selection.
+                                            </p>
+                                            <div class="d-flex justify-content-center justify-content-lg-start">
+                                                <a href="#products" class="btn btn-danger btn-lg w-50 scroll-animate" style="transition-delay: 0.4s">Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-5 carousel-img-container my-3 my-lg-0">
+                                            <img src="assets/images/products/carousel-img-4.png" alt="Carousel Image 3" class="hero-slider-img img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.Fourth Slide -->
+                                
+                                <!-- Fifth Slide -->
+                                <div class="swiper-slide">
+                                    <div class="row align-items-center gx-0 mx-0">
+                                        <div class="col-md-6 col-lg-7 text-start">   
+                                            <h1 class="hero-title scroll-animate titillium-web-bold">
+                                                <span class="text-danger">Engine Excellence</span> Starts Here
+                                            </h1>
+                                            <p class="lead mb-4 scroll-animate" style="transition-delay: 0.2s">
+                                                Shop high-quality parts engineered for precision and endurance. 
+                                                With expert support and an extensive catalog, 
+                                                we make it easy to keep your vehicle at its best.
+                                            </p>
+                                            <div class="d-flex justify-content-center justify-content-lg-start">
+                                                <a href="#products" class="btn btn-danger btn-lg w-50 scroll-animate" style="transition-delay: 0.4s">Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-5 carousel-img-container my-3 my-lg-0">
+                                            <img src="assets/images/products/carousel-img-5.png" alt="Carousel Image 3" class="hero-slider-img img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- /.Hero Content -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.Hero Section -->
+
+        <!-- Product Section -->
+        <div class="container-lg mt-3 mt-0" id="products">
+            <!-- Section Title -->
+            <div class="d-block mb-3">
+                <h5 class="titillium-web-bold">Featured Engine Parts</h5>
+                <p class="text-sm text-muted">Top rated component four your rebuild</p>
+                <div class="title-line-wrapper">
+                    <div class="title-box"></div>
+                    <hr class="title-line">
+                </div>
+
+            </div>
+            <!-- /.Section Title -->
+
+            <!-- Products -->
+            <div class="swiper products-slider pb-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-15%</span>
+                            <button class="btn btn-link text-danger position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart-fill fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/piston-2.jpg" class="card-img-top" alt="Forged Pistons Set">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Forged Pistons Set (V8)</h6></a>
+                                
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span class="text-muted ms-1">(24 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-index-10">New</span>
+                            <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/crankshaft-1.jpg" class="card-img-top" alt="High Performance Camshaft">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Stage 2 Performance Camshaft</h6></a>
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-muted ms-1">(12 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-10%</span>
+                            <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/gasket-1.jpg" class="card-img-top" alt="Engine Gasket Kit">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Complete Engine Gasket Kit</h6></a>
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span class="text-muted ms-1">(8 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                                <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/gasket-set-1.jpg" class="card-img-top" alt="Performance Spark Plugs">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Iridium Spark Plugs (Set of 8)</h6></a>
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-muted ms-1">(56 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card  -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-10%</span>
+                            <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/gasket-1.jpg" class="card-img-top" alt="Engine Gasket Kit">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html">
+                                    <a href="product.html"><h6 class="card-title fw-bold text-dark">Complete Engine Gasket Kit</h6></a>
+                                </a>
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span class="text-muted ms-1">(8 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                                <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/gasket-set-1.jpg" class="card-img-top" alt="Performance Spark Plugs">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Iridium Spark Plugs (Set of 8)</h6></a>
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-muted ms-1">(56 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card  -->
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- /.Products -->
+        </div>
+        <!-- /.Product Section -->
+
+        <!-- Popular Products Section -->
+        <div class="container-lg mt-3 mt-0" id="popular-products">
+            <!-- Section Title -->
+            <div class="d-block">
+                <h5 class="titillium-web-bold">Popular Engine Parts</h5>
+                <p class="text-sm text-muted">High quality parts for precision and endurance</p>
+                <div class="title-line-wrapper">
+                    <div class="title-box"></div>
+                    <hr class="title-line">
+                </div>
+
+            </div>
+            <!-- /.Section Title -->
+
+            <!-- Products -->
+            <div class="swiper products-slider pb-5 mb-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-15%</span>
+                            <button class="btn btn-link text-danger position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart-fill fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/piston-2.jpg" class="card-img-top" alt="Forged Pistons Set">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Forged Pistons Set (V8)</h6></a>
+                                
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span class="text-muted ms-1">(24 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-index-10">New</span>
+                            <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/crankshaft-1.jpg" class="card-img-top" alt="High Performance Camshaft">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Stage 2 Performance Camshaft</h6></a>
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-muted ms-1">(12 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-10%</span>
+                            <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/gasket-1.jpg" class="card-img-top" alt="Engine Gasket Kit">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Complete Engine Gasket Kit</h6></a>
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span class="text-muted ms-1">(8 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                                <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/gasket-set-1.jpg" class="card-img-top" alt="Performance Spark Plugs">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Iridium Spark Plugs (Set of 8)</h6></a>
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-muted ms-1">(56 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card  -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-10%</span>
+                            <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/gasket-1.jpg" class="card-img-top" alt="Engine Gasket Kit">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html">
+                                    <a href="product.html"><h6 class="card-title fw-bold text-dark">Complete Engine Gasket Kit</h6></a>
+                                </a>
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span class="text-muted ms-1">(8 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <!-- Product Card -->
+                        <div class="card product-card shadow-sm">
+                                <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
+                            
+                            <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
+                                <img src="assets/images/products/gasket-set-1.jpg" class="card-img-top" alt="Performance Spark Plugs">
+                            </a>
+                            
+                            <div class="card-body d-flex flex-column">
+                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Iridium Spark Plugs (Set of 8)</h6></a>
+                                <div class="mb-2 small text-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-muted ms-1">(56 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="d-flex gap-2">
+                                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
+                                        </a>
+                                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Product Card  -->
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- /.Products -->
+        </div>
+        <!-- /.Popular Products Section -->
+
+        <!-- Categories Section -->
+        <section id="categories" class="py-3 bg-light">
             <div class="container-lg">
-                <a class="btn bg-white d-md-none" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
-                    <i class="bi bi-list fw-bold fs-5"></i>
-                </a>
-                <a class="navbar-brand logo-container text-capitalize text-center m-0 p-1" href="#" role="button">
-                    <h4 class="text-danger logo-title m-0 p-0">M.T.M</h4>
-                    <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
-                </a>
-                <a class="btn bg-white d-md-none" data-bs-toggle="offcanvas" href="#search-page" role="button" aria-controls="search-page">
-                    <i class="bi bi-search fw-bold fs-5"></i>
-                </a>
-                <form class="d-none d-md-flex" id="search-input" role="search">
-                    <input class="form-control mx-2" type="search" placeholder="Search part..." aria-label="Search"/>
-                    <i class="bi bi-search"></i>
-                </form>
-                <div class="d-flex align-items-center justify-content-between">
-                    <ul class="navbar-nav">
-                        <li class="nav-item d-none d-lg-inline-block">
-                            <a class="nav-link active" aria-current="page" href="#">New Arrivals</a>
-                        </li>
-                        <li class="nav-item d-none d-md-inline-block">
-                            <a class="nav-link" href="special-offers.html">Special Offers</a>
-                        </li>
-                        <li class="nav-item d-none d-md-inline-block">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item d-none d-md-inline-block">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- /.Navbar -->
-
-        <!-- Nav Scroller -->
-        <div class="nav-scroller container"> 
-            <nav class="nav" aria-label="Secondary navigation"> 
-                <a class="nav-link active" aria-current="page" href="#home">Shop</a> 
-                <a class="nav-link" href="category.html">Cylinder Blocks</a> 
-                <a class="nav-link" href="category.html">Pistons</a> 
-                <a class="nav-link" href="category.html">Crankshafts</a> 
-                <a class="nav-link" href="category.html">Camshafts</a> 
-                <a class="nav-link" href="category.html">Cylinder Heads</a> 
-                <a class="nav-link" href="category.html">Valves</a> 
-                <a class="nav-link" href="category.html">Spark Plugs</a> 
-                <a class="nav-link" href="category.html">Fuel Injectors</a> 
-                <a class="nav-link" href="category.html">Connecting Rods</a> 
-                <a class="nav-link" href="category.html">Timing Belts</a> 
-            </nav> 
-        </div>
-        <!-- /.Nav Scroller -->
-    </header>
-    <!-- /.Header -->
-
-    <!-- Side Bar -->
-    <div class="offcanvas offcanvas-start sidebar-menu" tabindex="-1" id="sidebar" aria-labelledby="sidebar-menu">
-        <div class="offcanvas-header border-bottom m-0 p-0">
-            <h5 class="offcanvas-title" id="sidebar-menu">
-                 <div class="navbar-brand logo-container text-capitalize text-center p-1">
-                    <h4 class="text-danger logo-title m-0 p-0">M.T.M</h4>
-                    <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
-                </div>
-            </h5>
-        </div>
-        <div class="offcanvas-body p-0 m-0">
-            <ul class="list-group me-auto rounded-0 m-0 p-0">
-                <li class="list-group-item">
-                    <a href="category.html">
-                        <i class="bi bi-tools me-3"></i>
-                        Used Parts
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a href="category.html">
-                        <i class="bi bi-fire me-3"></i>
-                        New Arrivals
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a href="category.html">
-                        <i class="bi bi-lightning me-3"></i>
-                        Special Offers
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a href="about.html">
-                        <i class="bi bi-info-circle me-3"></i>
-                        About Us
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a href="contact.html">
-                        <i class="bi bi-telephone-outbound me-3"></i>
-                        Contact Us
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- /.Side Bar -->
-
-    <!-- Hero Section -->
-    <section class="hero-section" id="home"> 
-        <div class="container-lg my-lg-5">
-            <div class="row align-items-start gx-3">
-                <!-- Shop Sales Metrics -->
-                <div class="col-lg-4 col-xl-3 order-md-2 order-lg-1 d-none d-lg-block">
-                    <div class="d-block text-start mt-3">
-                        <h6 class="fw-bold">Discover engine parts you love</h6>
-                        <small class="text-sm text-muted text-justify">
-                            Be the first to know with M.T.M's insider guides, deep dives on old special offers, 
-                            and vital intel on all the latest and greatest new engine spare parts..
-                        </small>
-                        <hr>
-                         <address>
-                            <small class="text-muted fw-bold">M.T.M Auto Spares</small><br>
-                            <small class="text-muted">45 Kaguvi City Mall, Shop G3</small><br>
-                            <a class="small text-muted" href="tel:+263772123456">+263 772 262 5028</a><br>
-                            <a class="small text-muted" href="mailto:info@mtmspares.co.zw">info@mtmspares.co.zw</a><br>
-                            <a class="small text-muted" href="https://maps.google.com/?q=Kaguvi+City+Mall+Harare+Zimbabwe" rel="noopener">Find us on Maps</a><br>
-                        </address>
-                        <div class="d-flex align-items-center mt-2">
-                            <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set">
-                                <i class="bi bi-whatsapp fs-4 text-muted"></i>
-                            </a>
-                            <a href="http://m.me/263772625028">
-                                <i class="bi bi-facebook fs-4 text-muted mx-3"></i>
-                            </a>
-                            <a href="">
-                                <i class="bi bi-instagram fs-4 text-muted"></i>
-                            </a>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <i class="material-icons text-danger" style="font-size:7rem;transform:rotate(45deg)">arrow_upward</i>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.Shop Sales Metrics -->
-
-                <div class="col-lg-8 col-xl-7 order-md-1 order-lg-2">
-                    <!-- Hero Content -->
-                    <div class="swiper hero-content-slider mt-3 mt-lg-0 pb-0 pb-lg-5">
-                        <div class="swiper-wrapper">
-                            <!-- First Slide -->
-                            <div class="swiper-slide">
-                                <div class="row align-items-center gx-0 mx-0">
-                                    <div class="col-md-6 col-lg-7 text-start mb-5">   
-                                        <h1 class="hero-title scroll-animate titillium-web-bold">
-                                            Premium Engine Parts for <span class="text-danger">Peak Performance</span>
-                                        </h1>
-                                        <p class="lead mb-4 scroll-animate" style="transition-delay: 0.2s">
-                                            High quality automotive components with expert support. 
-                                            Find the perfect part for your vehicle from our extensive collection.
-                                        </p>
-                                        <div class="d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#products" class="btn btn-danger btn-lg w-50 scroll-animate" style="transition-delay: 0.4s">Shop Now</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-5 carousel-img-container my-3 my-lg-0">
-                                        <img src="assets/images/products/carousel-img-1.png" alt="Carousel Image 1" class="hero-slider-img img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.First Slide -->
-
-                            <!-- Second Slide -->
-                            <div class="swiper-slide">
-                                <div class="row align-items-center gx-0 mx-0">
-                                    <div class="col-md-6 col-lg-7 text-start">   
-                                        <h1 class="hero-title scroll-animate titillium-web-bold">
-                                            Precision Engine Parts for <span class="text-danger">Every Drive</span> 
-                                        </h1>
-                                        <p class="lead mb-4 scroll-animate" style="transition-delay: 0.2s">
-                                            Durable, performance-tested components backed by expert guidance. 
-                                            Explore our wide range of parts built to keep your vehicle running stronger, longer.
-                                        </p>
-                                        <div class="d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#products" class="btn btn-danger btn-lg w-50 scroll-animate" style="transition-delay: 0.4s">Shop Now</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-5 carousel-img-container my-3 my-lg-0">
-                                        <img src="assets/images/products/carousel-img-2.png" alt="Carousel Image 2" class="hero-slider-img img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.Second Slide -->
-
-                            <!-- Third Slide -->
-                            <div class="swiper-slide">
-                                <div class="row align-items-center gx-0 mx-0">
-                                    <div class="col-md-6 col-lg-7 text-start">   
-                                        <h1 class="hero-title scroll-animate titillium-web-bold">
-                                            Power Your Journey with <span class="text-danger">Trusted Parts</span> 
-                                        </h1>
-                                        <p class="lead mb-4 scroll-animate" style="transition-delay: 0.2s">
-                                            From pistons to turbochargers, discover premium automotive solutions designed for 
-                                            reliability and peak performance. 
-                                            Find exactly what your engine needs today.
-                                        </p>
-                                        <div class="d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#products" class="btn btn-danger btn-lg w-50 scroll-animate" style="transition-delay: 0.4s">Shop Now</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-5 carousel-img-container my-3 my-lg-0">
-                                        <img src="assets/images/products/carousel-img-3.png" alt="Carousel Image 3" class="hero-slider-img img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.Third Slide -->
-
-                            <!-- Fourth Slide -->
-                            <div class="swiper-slide">
-                                <div class="row align-items-center gx-0 mx-0">
-                                    <div class="col-md-6 col-lg-7 text-start">   
-                                        <h1 class="hero-title scroll-animate titillium-web-bold">
-                                            Drive Strong with <span class="text-danger">Genuine Engine Components</span> 
-                                        </h1>
-                                        <p class="lead mb-4 scroll-animate" style="transition-delay: 0.2s">
-                                            Your one-stop destination for top-grade automotive parts. 
-                                            Get the perfect fit for your car, backed by trusted expertise and 
-                                            unbeatable selection.
-                                        </p>
-                                        <div class="d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#products" class="btn btn-danger btn-lg w-50 scroll-animate" style="transition-delay: 0.4s">Shop Now</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-5 carousel-img-container my-3 my-lg-0">
-                                        <img src="assets/images/products/carousel-img-4.png" alt="Carousel Image 3" class="hero-slider-img img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.Fourth Slide -->
-                            
-                            <!-- Fifth Slide -->
-                            <div class="swiper-slide">
-                                <div class="row align-items-center gx-0 mx-0">
-                                    <div class="col-md-6 col-lg-7 text-start">   
-                                        <h1 class="hero-title scroll-animate titillium-web-bold">
-                                            <span class="text-danger">Engine Excellence</span> Starts Here
-                                        </h1>
-                                        <p class="lead mb-4 scroll-animate" style="transition-delay: 0.2s">
-                                            Shop high-quality parts engineered for precision and endurance. 
-                                            With expert support and an extensive catalog, 
-                                            we make it easy to keep your vehicle at its best.
-                                        </p>
-                                        <div class="d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#products" class="btn btn-danger btn-lg w-50 scroll-animate" style="transition-delay: 0.4s">Shop Now</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-5 carousel-img-container my-3 my-lg-0">
-                                        <img src="assets/images/products/carousel-img-5.png" alt="Carousel Image 3" class="hero-slider-img img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <!-- /.Hero Content -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /.Hero Section -->
-
-    <!-- Product Section -->
-    <div class="container-lg mt-3 mt-0" id="products">
-        <!-- Section Title -->
-        <div class="d-block mb-3">
-            <h5 class="titillium-web-bold">Featured Engine Parts</h5>
-            <p class="text-sm text-muted">Top rated component four your rebuild</p>
-            <div class="title-line-wrapper">
-                <div class="title-box"></div>
-                <hr class="title-line">
-            </div>
-
-        </div>
-        <!-- /.Section Title -->
-
-        <!-- Products -->
-        <div class="swiper products-slider pb-5">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                        <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-15%</span>
-                        <button class="btn btn-link text-danger position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart-fill fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/piston-2.jpg" class="card-img-top" alt="Forged Pistons Set">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html"><h6 class="card-title fw-bold text-dark">Forged Pistons Set (V8)</h6></a>
-                            
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-half"></i>
-                                <span class="text-muted ms-1">(24 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                            </div>
-
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
+                <h5 class="titillium-web-bold">Engine Parts Categories</h5>
+                <div class="row justify-content-lg-between mt-4">
+                    <div class="col-md-4 mb-4 scroll-animate">
+                        <div class="card h-100 radius-0 shadow-sm">
+                            <a href="category.html" class="stretched-link"></a>
+                            <div class="card-body text-center">
+                                <i class="bi bi-gear text-danger display-4 mb-3"></i>
+                                <h5 class="card-title titillium-web-bold text-muted my-3">Internal Components</h5>
+                                <p class="card-text text-muted">Pistons, crankshafts, camshafts, connecting rods, and valves for engine rebuilding and performance upgrades.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- /.Product Card -->
-                </div>
-
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                        <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-index-10">New</span>
-                        <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/crankshaft-1.jpg" class="card-img-top" alt="High Performance Camshaft">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html"><h6 class="card-title fw-bold text-dark">Stage 2 Performance Camshaft</h6></a>
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <span class="text-muted ms-1">(12 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                            </div>
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
+                    <div class="col-md-4 mb-4 scroll-animate">
+                        <div class="card h-100 radius-0 shadow-sm">
+                            <a href="category.html" class="stretched-link"></a>
+                            <div class="card-body text-center">
+                                <i class="bi bi-fan text-danger display-4 mb-3"></i>
+                                <h5 class="card-title titillium-web-bold text-muted my-3">Cooling Systems</h5>
+                                <p class="card-text text-muted">Radiators, water pumps, thermostats, fans, and hoses to keep your engine at optimal temperature.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- /.Product Card -->
-                </div>
-
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                        <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-10%</span>
-                        <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/gasket-1.jpg" class="card-img-top" alt="Engine Gasket Kit">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html"><h6 class="card-title fw-bold text-dark">Complete Engine Gasket Kit</h6></a>
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <span class="text-muted ms-1">(8 <span class="d-none d-md-inline-block">Reviews</span>)</span>
+                    <div class="col-md-4 mb-4 scroll-animate">
+                        <div class="card h-100 radius-0 shadow-sm">
+                            <a href="category.html" class="stretched-link"></a>
+                            <div class="card-body text-center">
+                                <i class="bi bi-lightning-charge text-danger display-4 mb-3"></i>
+                                <h5 class="card-title titillium-web-bold text-muted my-3">Ignition & Fuel</h5>
+                                <p class="card-text text-muted">Spark plugs, coils, fuel injectors, pumps, and regulators for efficient combustion and power delivery.</p>
                             </div>
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Product Card -->
-                </div>
-
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                            <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/gasket-set-1.jpg" class="card-img-top" alt="Performance Spark Plugs">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html"><h6 class="card-title fw-bold text-dark">Iridium Spark Plugs (Set of 8)</h6></a>
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <span class="text-muted ms-1">(56 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                            </div>
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Product Card  -->
-                </div>
-
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                        <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-10%</span>
-                        <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/gasket-1.jpg" class="card-img-top" alt="Engine Gasket Kit">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html">
-                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Complete Engine Gasket Kit</h6></a>
-                            </a>
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <span class="text-muted ms-1">(8 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                            </div>
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Product Card -->
-                </div>
-
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                            <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/gasket-set-1.jpg" class="card-img-top" alt="Performance Spark Plugs">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html"><h6 class="card-title fw-bold text-dark">Iridium Spark Plugs (Set of 8)</h6></a>
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <span class="text-muted ms-1">(56 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                            </div>
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Product Card  -->
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <!-- /.Products -->
-    </div>
-    <!-- /.Product Section -->
-
-    <!-- Popular Products Section -->
-    <div class="container-lg mt-3 mt-0" id="popular-products">
-        <!-- Section Title -->
-        <div class="d-block">
-            <h5 class="titillium-web-bold">Popular Engine Parts</h5>
-            <p class="text-sm text-muted">High quality parts for precision and endurance</p>
-            <div class="title-line-wrapper">
-                <div class="title-box"></div>
-                <hr class="title-line">
-            </div>
-
-        </div>
-        <!-- /.Section Title -->
-
-        <!-- Products -->
-        <div class="swiper products-slider pb-5 mb-5">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                        <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-15%</span>
-                        <button class="btn btn-link text-danger position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart-fill fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/piston-2.jpg" class="card-img-top" alt="Forged Pistons Set">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html"><h6 class="card-title fw-bold text-dark">Forged Pistons Set (V8)</h6></a>
-                            
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-half"></i>
-                                <span class="text-muted ms-1">(24 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                            </div>
-
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Product Card -->
-                </div>
-
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                        <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-index-10">New</span>
-                        <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/crankshaft-1.jpg" class="card-img-top" alt="High Performance Camshaft">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html"><h6 class="card-title fw-bold text-dark">Stage 2 Performance Camshaft</h6></a>
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <span class="text-muted ms-1">(12 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                            </div>
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Product Card -->
-                </div>
-
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                        <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-10%</span>
-                        <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/gasket-1.jpg" class="card-img-top" alt="Engine Gasket Kit">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html"><h6 class="card-title fw-bold text-dark">Complete Engine Gasket Kit</h6></a>
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <span class="text-muted ms-1">(8 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                            </div>
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Product Card -->
-                </div>
-
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                            <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/gasket-set-1.jpg" class="card-img-top" alt="Performance Spark Plugs">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html"><h6 class="card-title fw-bold text-dark">Iridium Spark Plugs (Set of 8)</h6></a>
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <span class="text-muted ms-1">(56 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                            </div>
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Product Card  -->
-                </div>
-
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                        <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-index-10">-10%</span>
-                        <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/gasket-1.jpg" class="card-img-top" alt="Engine Gasket Kit">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html">
-                                <a href="product.html"><h6 class="card-title fw-bold text-dark">Complete Engine Gasket Kit</h6></a>
-                            </a>
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <span class="text-muted ms-1">(8 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                            </div>
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Product Card -->
-                </div>
-
-                <div class="swiper-slide">
-                    <!-- Product Card -->
-                    <div class="card product-card shadow-sm">
-                            <button class="btn btn-link text-secondary position-absolute top-0 end-0 m-2 z-index-10 p-0"><i class="bi bi-heart fs-5"></i></button>
-                        
-                        <a href="product.html" class="product-img-container bg-light d-flex align-items-center justify-content-center">
-                            <img src="assets/images/products/gasket-set-1.jpg" class="card-img-top" alt="Performance Spark Plugs">
-                        </a>
-                        
-                        <div class="card-body d-flex flex-column">
-                            <a href="product.html"><h6 class="card-title fw-bold text-dark">Iridium Spark Plugs (Set of 8)</h6></a>
-                            <div class="mb-2 small text-danger">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <span class="text-muted ms-1">(56 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                            </div>
-                            <div class="mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-messenger"></i> <span class="d-none d-md-block ms-2">Chat</span>
-                                    </a>
-                                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-sm flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Product Card  -->
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <!-- /.Products -->
-    </div>
-    <!-- /.Popular Products Section -->
-
-     <!-- Categories Section -->
-    <section id="categories" class="py-3 bg-light">
-        <div class="container-lg">
-            <h5 class="titillium-web-bold">Engine Parts Categories</h5>
-            <div class="row justify-content-lg-between mt-4">
-                <div class="col-md-4 mb-4 scroll-animate">
-                    <div class="card h-100 radius-0 shadow-sm">
-                        <a href="category.html" class="stretched-link"></a>
-                        <div class="card-body text-center">
-                            <i class="bi bi-gear text-danger display-4 mb-3"></i>
-                            <h5 class="card-title titillium-web-bold text-muted my-3">Internal Components</h5>
-                            <p class="card-text text-muted">Pistons, crankshafts, camshafts, connecting rods, and valves for engine rebuilding and performance upgrades.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 scroll-animate">
-                    <div class="card h-100 radius-0 shadow-sm">
-                        <a href="category.html" class="stretched-link"></a>
-                        <div class="card-body text-center">
-                            <i class="bi bi-fan text-danger display-4 mb-3"></i>
-                            <h5 class="card-title titillium-web-bold text-muted my-3">Cooling Systems</h5>
-                            <p class="card-text text-muted">Radiators, water pumps, thermostats, fans, and hoses to keep your engine at optimal temperature.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 scroll-animate">
-                    <div class="card h-100 radius-0 shadow-sm">
-                        <a href="category.html" class="stretched-link"></a>
-                        <div class="card-body text-center">
-                            <i class="bi bi-lightning-charge text-danger display-4 mb-3"></i>
-                            <h5 class="card-title titillium-web-bold text-muted my-3">Ignition & Fuel</h5>
-                            <p class="card-text text-muted">Spark plugs, coils, fuel injectors, pumps, and regulators for efficient combustion and power delivery.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- /.Categories Section -->
+        </section>
+        <!-- /.Categories Section -->
+    </main>
+    <!-- Main Content -->
 
     <!-- Footer -->
     <footer class="footer bg-dark border-top text-white pt-5" id="contact">
