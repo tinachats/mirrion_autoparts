@@ -145,24 +145,24 @@
     <!-- /.Breadcrumbs -->
 
     <!-- Product Details -->
-    <div class="container-lg" id="product-details">
-        <div class="row align-items-lg-start justify-content-center justify-content-lg-start gx-xl-0">
+    <div class="container-lg" id="product-details-page">
+        <div class="row align-items-lg-start justify-content-center justify-content-lg-start gx-5">
             <!-- Product Images -->
-            <div class="col-md-6 col-xl-4 mb-3 px-lg-0">
+            <div class="col-md-6 col-xl-4 mb-3">
                 <div class="d-block">
                     <!-- Main Image -->
-                    <div class="d-flex justify-content-center main-img-container border border-danger mb-3">
-                        <img src="assets/images/products/carousel-img-1.png" alt="Product's Main Image">
+                    <div class="d-flex justify-content-center main-img-container mb-3" id="zoom-container">
+                        <img src="assets/images/products/carousel-img-1.png" id="main-img" alt="Product's Main Image">
                     </div>
                     <!-- /.Main Image -->
 
                     <!-- Thumbnail Images -->
                     <div class="d-flex align-items-start thumbnail-column">
-                        <img src="assets/images/products/crankshaft-1.jpg" alt="Thumbnail Image 1" class="thumbnail-img active">
-                        <img src="assets/images/products/crankshaft-2.jpg" alt="Thumbnail Image 2" class="thumbnail-img">
-                        <img src="assets/images/products/crankshaft-3.jpg" alt="Thumbnail Image 3" class="thumbnail-img">
-                        <img src="assets/images/products/crankshaft-4.jpg" alt="Thumbnail Image 4" class="thumbnail-img">
-                        <img src="assets/images/products/crankshaft-pulley-.jpg" alt="Thumbnail Image 5" class="thumbnail-img">
+                        <img src="assets/images/products/crankshaft-1.jpg" alt="Thumbnail Image 1" class="thumbnail-img active" onclick="changeImage(this)" onmouseover="changeImage(this)">
+                        <img src="assets/images/products/crankshaft-2.jpg" alt="Thumbnail Image 2" class="thumbnail-img" onclick="changeImage(this)" onmouseover="changeImage(this)">
+                        <img src="assets/images/products/crankshaft-3.jpg" alt="Thumbnail Image 3" class="thumbnail-img" onclick="changeImage(this)" onmouseover="changeImage(this)">
+                        <img src="assets/images/products/crankshaft-4.jpg" alt="Thumbnail Image 4" class="thumbnail-img" onclick="changeImage(this)" onmouseover="changeImage(this)">
+                        <img src="assets/images/products/crankshaft-pulley-.jpg" alt="Thumbnail Image 5" class="thumbnail-img" onclick="changeImage(this)" onmouseover="changeImage(this)">
                     </div>
                     <!-- /.Thumbnail Images -->
                 </div>
@@ -170,60 +170,238 @@
             <!-- /.Product Images -->
 
             <!-- Product Info -->
-            <div class="col-md-6 col-xl-8 mb-5">
-                <div class="d-block text-start">
-                    <h4 class="text-capitalize product-title fw-bold">
-                        Engine gasket set
-                    </h4>
-                    <div class="mb-2 small text-danger my-2">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                        <span class="text-muted ms-1">(24 <span class="d-none d-md-inline-block">Reviews</span>)</span>
-                    </div>
-                    <p class="d-flex align-items-center">
-                        <i class="bi bi-shield-fill-check text-success me-2"></i> 2 year warranty
-                    </p>
-                    <p class="d-flex align-items-center">
-                        <span class="d-flex align-items-center text-success fw-bold">
-                            <i class="bi bi-check2 fs-3 me-2"></i> In Stock
-                        </span>
-                        <span class="mx-2">|</span>
-                        <span class="d-flex align-items-center">
-                            <span class="fw-bold me-2">34 bought</span> in past month
-                        </span>
-                    </p>
-                    <div class="d-flex align-items-center small">
-                        <div class="d-flex align-items-center">
-                            <span class="text-muted me-2">Part</span>
-                            <span id="part-number">#213-4668</span>
+            <div class="col-md-6 col-xl-8 mb-3">
+                <div class="d-block bg-white rounded-3 shadow-sm p-4">
+                    <div class="d-block text-start">
+                        <h4 class="text-capitalize product-title fw-bold">
+                            FEL-PRO Full Gasket Set 260-1125
+                        </h4>
+
+                        <!-- Ratings & Reviews -->
+                        <div class="small text-danger my-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span class="text-muted ms-1">(24 <span class="d-none d-md-inline-block">Reviews</span>)</span>
                         </div>
-                        <span class="mx-2">|</span>
-                        <div class="d-flex align-items-center">
-                            <span class="text-muted me-2" title="Stock Keeping Unit">SKU</span>
-                            <span id="part-number">#8388</span>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center my-3">
-                        <div class="d-block position-relative vehicle-fitment-inspection me-2">
-                            <img src="assets/images/app/vehicle-new.svg" alt="Vehicle Check">
-                            <img src="assets/images/app/icon-fitment-warning-orange.svg" id="vehicle-fitment-signal" alt="Fitment warning signal">
-                        </div>
-                        <small class="text-muted">
-                            <a href="#vehicle-inspection-modal" class="text-underline text-muted">Check</a> if this fits your vehicle
+                        <!-- /.Ratings & Reviews -->
+
+                        <!-- Warranty -->
+                        <small class="d-flex align-items-center text-muted">
+                            <i class="bi bi-shield-check text-danger fs-4 me-2"></i> 2 year warranty
                         </small>
+                        <!-- /.Warranty -->
+
+                        <!-- Stock Status -->
+                        <small class="d-flex align-items-center">
+                            <span class="d-flex align-items-center text-success fw-bold">
+                                <i class="bi bi-check2 fs-3 me-2"></i> In Stock
+                            </span>
+                            <span class="mx-2">|</span>
+                            <span class="d-flex align-items-center">
+                                <span class="fw-bold me-2">34 bought</span> in past month
+                            </span>
+                        </small>
+                        <!-- /.Stock Status -->
+
+                        <!-- Part & SKU -->
+                        <div class="d-flex align-items-center small">
+                            <div class="d-flex align-items-center">
+                                <span class="text-muted me-2">Part</span>
+                                <span id="part-number">#213-4668</span>
+                            </div>
+                            <span class="mx-2">|</span>
+                            <div class="d-flex align-items-center">
+                                <span class="text-muted me-2" title="Stock Keeping Unit">SKU</span>
+                                <span id="part-number">#8388</span>
+                            </div>
+                        </div>
+                        <!-- /.Part & SKU -->
+
+                        <!-- Vehicle Fitment Inspection -->
+                        <div class="d-flex align-items-center my-3">
+                            <div class="d-block position-relative vehicle-fitment-inspection me-2">
+                                <img src="assets/images/app/vehicle-new.svg" alt="Vehicle Check">
+                                <img src="assets/images/app/icon-fitment-warning-orange.svg" id="vehicle-fitment-signal" alt="Fitment warning signal">
+                            </div>
+                            <small class="text-muted">
+                                <a href="#vehicle-inspection-modal" class="text-underline text-muted">Check</a> if this fits your vehicle
+                            </small>
+                        </div>
+                        <!-- /.Vehicle Fitment Inspection -->
                     </div>
-                    <div class="d-flex justify-content-start gap-2">
-                        <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-lg flex-grow-1 d-flex align-items-center justify-content-center">
-                            <i class="bi bi-messenger me-2"></i> Chat
-                        </a>
-                        <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-lg flex-grow-1 d-flex align-items-center justify-content-center">
-                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                        </a>
+
+                    <!-- Product Specs -->
+                    <div class="d-block my-3">
+                        <div class="accordion accordion-flush" id="product-specs-accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#product-info" aria-expanded="true" aria-controls="product-info">
+                                    Product Details
+                                </button>
+                                </h2>
+                                <div id="product-info" class="accordion-collapse collapse show" data-bs-parent="#product-specs-accordion">
+                                    <div class="accordion-body">
+                                        <p class="product-details-info mb-0">
+                                            Fel-Pro® gaskets are specifically designed for the repair environment 
+                                            to deliver a reliable seal on even the most troublesome applications. 
+                                            Designed for imperfect sealing surfaces and manufactured with proprietary 
+                                            materials, you can count on Fel-Pro for innovative sealing solutions for 
+                                            the real-world repair environment.
+                                        </p>
+                                        <ul class="details-list-group m-0 p-0">
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check2 fs-4 text-success me-2"></i>
+                                                Meets or exceeds all original equipment specifications
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check2 fs-4 text-success me-2"></i>
+                                                Application specific design to ensure a perfect fit
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check2 fs-4 text-success me-2"></i>
+                                                Engineered and manufactured specifically for the repair environment
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check2 fs-4 text-success me-2"></i>
+                                                Unsurpassed quality you can trust
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check2 fs-4 text-success me-2"></i>
+                                            Includes all parts needed to complete the repair
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-specs" aria-expanded="false" aria-controls="product-specs">
+                                        Product Specifications
+                                    </button>
+                                </h2>
+                                <div id="product-specs" class="accordion-collapse collapse" data-bs-parent="#product-specs-accordion">
+                                    <div class="accordion-body">
+                                        <h5 class="fw-bold">Technical Details</h5>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Manufacturer</td>
+                                                    <td>YESWELDER</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Part Number</td>
+                                                    <td>FLUX-135</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">SKU Number</td>
+                                                    <td>FLUX-135</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Grade Type</td>
+                                                    <td>Standard Replacement</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Item Weight</td>
+                                                    <td>579 grammes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Product Dimensions</td>
+                                                    <td>17.4 x 13.74 x 7.56 mm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Size</td>
+                                                    <td>Average</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Color</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Style</td>
+                                                    <td>FLUX-135PRO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Material</td>
+                                                    <td>Metal</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Pattern</td>
+                                                    <td>FLUX-135PRO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Shape</td>
+                                                    <td>Rectangle</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Item Package Quantity</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold text-capitalize">Special Features</td>
+                                                    <td>Portable</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vehicle-specs" aria-expanded="false" aria-controls="vehicle-specs">
+                                    <img src="assets/images/app/vehicle-new.svg" alt="Vehicle Check"> 
+                                    <strong class="mx-2">this part</strong>
+                                    fits these vehicles
+                                </button>
+                                </h2>
+                                <div id="vehicle-specs" class="accordion-collapse collapse" data-bs-parent="#product-specs-accordion">
+                                    <div class="accordion-body">
+                                        <div class="row gx-5">
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                                <h6 class="text-capitalize text-muted">Bronco</h6>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                                <h6 class="text-capitalize text-muted">Fairmont Futura</h6>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                                <h6 class="text-capitalize text-muted">Gran Torino</h6>
+                                            </div><div class="col-md-6 col-lg-4 col-xl-3">
+                                                <h6 class="text-capitalize text-muted">Granada</h6>
+                                            </div><div class="col-md-6 col-lg-4 col-xl-3">
+                                                <h6 class="text-capitalize text-muted">Thunderbird</h6>
+                                            </div><div class="col-md-6 col-lg-4 col-xl-3">
+                                                <h6 class="text-capitalize text-muted">Ranch Wagon</h6>
+                                            </div><div class="col-md-6 col-lg-4 col-xl-3">
+                                                <h6 class="text-capitalize text-muted">Torino</h6>
+                                            </div><div class="col-md-6 col-lg-4 col-xl-3">
+                                                <h6 class="text-capitalize text-muted">Galaxie 500</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- /.Product Specs -->
                 </div>
+                <!-- Action Buttons -->
+                <div class="d-flex justify-content-start gap-2 mt-3">
+                    <a href="http://m.me/263772625028" target="_blank" class="btn btn-light btn-lg me-2">
+                        <i class="bi bi-messenger me-2"></i> Chat
+                    </a>
+                    <a href="https://wa.me/263772625028?text=I'm%20interested%20in%20the%20Forged%20Pistons%20Set" target="_blank" class="btn btn-danger btn-lg">
+                        <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                    </a>
+                </div>
+                <!-- /.Action Buttons -->
             </div>
             <!-- /.Product Info -->
         </div>
@@ -231,9 +409,9 @@
     <!-- /.Product Details -->
 
     <!-- Similar Product Section -->
-    <div class="container-lg mt-3 mt-0" id="recommended-products">
+    <div class="container-xl mt-3 mt-0" id="recommended-products">
         <!-- Section Title -->
-        <div class="d-block mb-3" data-aos="fade-up">
+        <div class="d-block mb-3">
             <h5 class="titillium-web-bold">You may also like</h5>
             <p class="text-sm text-muted">Here are some related products we think you’ll love</p>
             <div class="title-line-wrapper">
@@ -245,7 +423,7 @@
         <!-- /.Section Title -->
 
         <!-- Products -->
-        <div class="swiper products-slider pb-5" data-aos="fade-up">
+        <div class="swiper products-slider pb-5">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <!-- Product Card -->
@@ -468,7 +646,7 @@
     <!-- Viewed Products Section -->
     <div class="container-lg mt-3 mt-0" id="viewed-products">
         <!-- Section Title -->
-        <div class="d-block" data-aos="fade-up">
+        <div class="d-block">
             <h5 class="titillium-web-bold">Recently viewed products</h5>
             <p class="text-sm text-muted">Quick access to the products you’ve recently viewed</p>
             <div class="title-line-wrapper">
@@ -480,7 +658,7 @@
         <!-- /.Section Title -->
 
         <!-- Products -->
-        <div class="swiper products-slider pb-5 mb-5" data-aos="fade-up">
+        <div class="swiper products-slider pb-5 mb-5">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <!-- Product Card -->
@@ -832,6 +1010,43 @@
             },
         });
 
+        // Gallery Switcher Function
+        function changeImage(element) {
+            const mainImg = document.getElementById('main-img');
+            mainImg.src = element.src;
+            
+            // Update active thumbnail styling
+            document.querySelectorAll('.thumbnail-img').forEach(img => img.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        // Zoom Logic
+        const container = document.getElementById('zoom-container');
+        const img = document.getElementById('main-img');
+
+        container.addEventListener('mousemove', (e) => {
+            const x = e.clientX - e.target.offsetLeft;
+            const y = e.clientY - e.target.offsetTop;
+
+            const mX = e.offsetX;
+            const mY = e.offsetY;
+            
+            const width = container.offsetWidth;
+            const height = container.offsetHeight;
+
+            // Calculate percentage for transform-origin
+            const xPercent = (mX / width) * 100;
+            const yPercent = (mY / height) * 100;
+
+            img.style.transformOrigin = `${xPercent}% ${yPercent}%`;
+            img.style.transform = "scale(2)";
+        });
+
+        container.addEventListener('mouseleave', () => {
+            img.style.transform = "scale(1)";
+            img.style.transformOrigin = "center center";
+        });
+        
         // Toggle favorite button function
         function toggleFavorite(button) {
             button.classList.toggle('active');

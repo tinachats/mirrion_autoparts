@@ -2,6 +2,7 @@
 
 :root {
   --font-family: 'Titillium Web', sans-serif;
+  --form-control-shadow: rgba(253, 13, 33, 0.25);
   --black: #000000;
   --bs-warning: #ffc107;
   --light-gray: #6c757d;
@@ -134,7 +135,7 @@ nav.nav-breadcrumb>ol>li>a {
 .form-control:focus {
   border-color: var(--light-red);
   outline: 0;
-  box-shadow: 0 0 0 .25rem rgba(253, 13, 33, 0.25);
+  box-shadow: 0 0 0 .25rem var(--form-control-shadow);
 }
 
 #search-input {
@@ -279,12 +280,17 @@ nav.nav-breadcrumb>ol>li>a {
 .main-img-container {
   height: 400px;
   width: 400px;
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
 }
 
 .main-img-container>img {
   width: 100%;
   height: 100%;
   object-fit: fill;
+  transition: transform 0.3s ease-out;
+  transform-origin: center center;
 }
 
 .thumbnail-column>img {
@@ -292,11 +298,28 @@ nav.nav-breadcrumb>ol>li>a {
   width: 75px;
   border-radius: .35rem;
   border: 3px solid transparent;
+  transition: all 0.2s;
   margin-right: .5rem;
+}
+
+.thumbnail-column>img:hover, 
+.thumbnail-column>img.active {
+  border-color: var(--primary-color);
+  opacity: 0.8;
 }
 
 .thumbnail-column>img.active {
   border: 3px solid var(--primary-color);
+}
+
+.vehicle-fitment-inspection {
+  position: relative;
+}
+
+#vehicle-fitment-signal {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
 }
 
 /*** Media Queries ***/
@@ -337,37 +360,31 @@ nav.nav-breadcrumb>ol>li>a {
   }
 
   /* Product Details Images */
-.main-img-container {
-  position: relative;
-  height: 320px;
-  width: 100%
-}
+  .main-img-container {
+    position: relative;
+    height: 320px;
+    width: 100%
+  }
 
-.main-img-container,
-.thumbnail-column {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-}
+  .main-img-container,
+  .thumbnail-column {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
 
-.thumbnail-column>img {
-  height: 50px;
-  width: 50px;
-  border-radius: .35rem;
-  border: 3px solid transparent;
-  margin-right: .5rem;
-}
+  .thumbnail-column>img {
+    height: 50px;
+    width: 50px;
+    border-radius: .35rem;
+    border: 3px solid transparent;
+    margin-right: .5rem;
+  }
 
-.vehicle-fitment-inspection {
-  position: relative;
-  width: fit-content;
-}
-
-#vehicle-fitment-signal {
-  position: absolute;
-  right: 0px;
-  bottom: 0;
-}
+  #product-details-page .product-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
 
   /* Typography */
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
