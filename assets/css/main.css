@@ -92,6 +92,14 @@ a:hover, a:focus, a:active, a.active, a* {
   text-decoration: none !important;
 }
 
+/* Breadcrumb */
+nav.nav-breadcrumb>ol>li,
+nav.nav-breadcrumb>ol>li>a {
+  font-weight: 600;
+  color: var(--light-gray);
+  text-decoration: none;
+}
+
 /* Logo Container */
 .logo-container {
   display: block;
@@ -254,18 +262,42 @@ a:hover, a:focus, a:active, a.active, a* {
   transform: translateY(0);
 }
 
- /* Side Menu */
-  .sidebar-menu {
-    width: 300px !important;
-  }
+/* Side Menu */
+.sidebar-menu {
+  width: 300px !important;
+}
 
-  .sidebar-menu .list-group .list-group-item>a {
-    display: flex;
-    align-items: center;
-    color: var(--black);
-    text-decoration: none;
-    cursor: pointer;
-  }
+.sidebar-menu .list-group .list-group-item>a {
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Product Details Images */
+.main-img-container {
+  height: 400px;
+  width: 400px;
+}
+
+.main-img-container>img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.thumbnail-column>img {
+  height: 75px;
+  width: 75px;
+  border-radius: .35rem;
+  border: 3px solid transparent;
+  margin-right: .5rem;
+}
+
+.thumbnail-column>img.active {
+  border: 3px solid var(--primary-color);
+}
 
 /*** Media Queries ***/
 /* Small devices (landscape phones, 576px and down) */
@@ -273,6 +305,10 @@ a:hover, a:focus, a:active, a.active, a* {
   /* Navbar */
   .offcanvas-header, .navbar {
     height: 50px;
+  }
+
+  nav.nav-breadcrumb {
+    margin-top: 6.5rem;
   }
 
   /* Hero Section */
@@ -299,6 +335,39 @@ a:hover, a:focus, a:active, a.active, a* {
     position: relative;
     height: 150px;
   }
+
+  /* Product Details Images */
+.main-img-container {
+  position: relative;
+  height: 320px;
+  width: 100%
+}
+
+.main-img-container,
+.thumbnail-column {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.thumbnail-column>img {
+  height: 50px;
+  width: 50px;
+  border-radius: .35rem;
+  border: 3px solid transparent;
+  margin-right: .5rem;
+}
+
+.vehicle-fitment-inspection {
+  position: relative;
+  width: fit-content;
+}
+
+#vehicle-fitment-signal {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+}
 
   /* Typography */
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -365,6 +434,16 @@ a:hover, a:focus, a:active, a.active, a* {
   .hero-section {
     margin-top: 6rem;
   }
+
+  nav.nav-breadcrumb {
+    margin-top: 7rem;
+  }
+
+  /* Breadcrumb */
+  nav.nav-breadcrumb>ol>li,
+  nav.nav-breadcrumb>ol>li>a {
+    font-size: 1rem;
+  }
 }
 
 /* Large devices (desktops, 992px and down) */
@@ -425,7 +504,7 @@ a:hover, a:focus, a:active, a.active, a* {
   }
 
   /* Hero Section */
-  .hero-section {
+  .hero-section, nav.nav-breadcrumb {
     margin-top: 8rem;
   }
 
