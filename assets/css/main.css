@@ -658,6 +658,10 @@ nav.nav-breadcrumb>ol>li>a {
     font-weight: 700;
   }
 
+  #about-page .img-wrapper {
+    height: 350px;
+  }
+
   /* Typography */
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0;
