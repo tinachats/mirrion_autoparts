@@ -7,6 +7,7 @@
   --black: #000000;
   --bg-light: #f8f9fa;
   --border-color: #dee2e6;
+  --border-width: .25px;
   --bs-warning: #ffc107;
   --light-gray: #6c757d;
   --light-red: #fe8690;
@@ -136,6 +137,25 @@ header.header {
 a:hover, a:focus, a:active, a.active, a* {
   color: var(--primary-color);
   text-decoration: none !important;
+}
+
+/* Card */
+.card {
+  border: var(--border-width) solid var(--border-color);
+}
+
+#about-page .img-wrapper {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  border: var(--border-width) solid var(--border-color);
+  background-color: var(--white);
+}
+
+#about-page .img-wrapper>img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Form Check Input */
@@ -282,7 +302,7 @@ nav.nav-breadcrumb>ol>li>a {
 .swiper-slide>.product-card {
   height: 400px;
   width: 250px;
-  border: .25px solid var(--border-color);
+  border: var(--border-width) solid var(--border-color);
 }
 
 .swiper-slide>.product-card .product-img-container{
@@ -553,7 +573,7 @@ nav.nav-breadcrumb>ol>li>a {
   }
 
   .product-list.grid-view>.product-card {
-    height: 255px;
+    height: 270px;
     width: 100%;
   }
 
@@ -563,7 +583,7 @@ nav.nav-breadcrumb>ol>li>a {
   }
 
   .product-list.grid-view>.product-card>.card-body .card-title {
-    font-size: .875rem;
+    font-size: 1rem;
   }
 
   .product-list.grid-view>.product-card>.card-body>.product-info {
@@ -592,7 +612,7 @@ nav.nav-breadcrumb>ol>li>a {
   }
 
   .product-list.list-view>.product-card>.card-body .card-title {
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 
@@ -868,5 +888,9 @@ nav.nav-breadcrumb>ol>li>a {
   .product-list.grid-view {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+  }
+
+  .product-list.grid-view>.product-card>.card-body>.product-info {
+    font-size: .875rem;
   }
 }

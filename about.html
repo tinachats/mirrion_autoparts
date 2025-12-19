@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/products/logo.jpeg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Animate On Scroll CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Swiper Slider CSS -->
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- App's Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg-light">
+    <!-- Main Content -->
+    <main class="main-content" id="about-page">
+        <!-- Header -->
+        <header class="header bg-white border-bottom shadow-sm fixed-top mb-5">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-white border-body border-bottom p-0 t-0" data-bs-theme="light">
+                <div class="container-lg">
+                    <a class="btn bg-white d-md-none" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
+                        <i class="bi bi-list fw-bold fs-5"></i>
+                    </a>
+                    <a class="navbar-brand logo-container text-capitalize text-center m-0 p-1" href="index.html" role="button">
+                        <h4 class="text-danger logo-title m-0 p-0">M.T.M</h4>
+                        <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
+                    </a>
+                    <a class="btn bg-white d-md-none" data-bs-toggle="offcanvas" href="#search-page" role="button" aria-controls="search-page">
+                        <i class="bi bi-search fw-bold fs-5"></i>
+                    </a>
+                    <form class="d-none d-md-flex" id="search-input" role="search">
+                        <input class="form-control mx-2" type="search" placeholder="Search part..." aria-label="Search"/>
+                        <i class="bi bi-search"></i>
+                    </form>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <ul class="navbar-nav">
+                            <li class="nav-item d-none d-lg-inline-block">
+                                <a class="nav-link active" aria-current="page" href="#">New Arrivals</a>
+                            </li>
+                            <li class="nav-item d-none d-md-inline-block">
+                                <a class="nav-link" href="special-offers.html">Special Offers</a>
+                            </li>
+                            <li class="nav-item d-none d-md-inline-block">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item d-none d-md-inline-block">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- /.Navbar -->
+
+            <!-- Nav Scroller -->
+            <div class="nav-scroller container"> 
+                <nav class="nav" aria-label="Secondary navigation"> 
+                    <a class="nav-link active" aria-current="page" href="index.html">Shop</a> 
+                    <a class="nav-link" href="category.html">Cylinder Blocks</a> 
+                    <a class="nav-link" href="category.html">Pistons</a> 
+                    <a class="nav-link" href="category.html">Crankshafts</a> 
+                    <a class="nav-link" href="category.html">Camshafts</a> 
+                    <a class="nav-link" href="category.html">Cylinder Heads</a> 
+                    <a class="nav-link" href="category.html">Valves</a> 
+                    <a class="nav-link" href="category.html">Spark Plugs</a> 
+                    <a class="nav-link" href="category.html">Fuel Injectors</a> 
+                    <a class="nav-link" href="category.html">Connecting Rods</a> 
+                    <a class="nav-link" href="category.html">Timing Belts</a> 
+                </nav> 
+            </div>
+            <!-- /.Nav Scroller -->
+        </header>
+        <!-- /.Header -->
+
+        <!-- Side Bar -->
+        <div class="offcanvas offcanvas-start sidebar-menu" tabindex="-1" id="sidebar" aria-labelledby="sidebar-menu">
+            <div class="offcanvas-header border-bottom m-0 p-0">
+                <h5 class="offcanvas-title" id="sidebar-menu">
+                    <div class="navbar-brand logo-container text-capitalize text-center p-1">
+                        <h4 class="text-danger logo-title m-0 p-0">M.T.M</h4>
+                        <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
+                    </div>
+                </h5>
+            </div>
+            <div class="offcanvas-body p-0 m-0">
+                <ul class="list-group me-auto rounded-0 m-0 p-0">
+                    <li class="list-group-item">
+                        <a href="category.html">
+                            <i class="bi bi-tools me-3"></i>
+                            Used Parts
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="category.html">
+                            <i class="bi bi-fire me-3"></i>
+                            New Arrivals
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="category.html">
+                            <i class="bi bi-lightning me-3"></i>
+                            Special Offers
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="about.html">
+                            <i class="bi bi-info-circle me-3"></i>
+                            About Us
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="contact.html">
+                            <i class="bi bi-telephone-outbound me-3"></i>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.Side Bar -->
+
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb" class="nav-breadcrumb container-fluid container-lg">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item page-title active" aria-current="page">Contact Us</li>
+            </ol>
+        </nav>
+        <!-- /.Breadcrumbs -->
+
+        <div class="container-lg mt-3 mb-5">
+            <!-- Page Title -->
+            <h1 class="display-6 titillium-web-bold page-title">About Us</h1>
+            <!-- /.Page Title -->
+
+            <!-- Vision Statement -->
+            <div class="container-lg mt-3 mt-0 pb-5 px-lg-0">
+                <!-- Our Vision -->
+                <div class="row align-items-lg-center gx-5">
+                    <div class="col-lg-6">
+                        <div class="d-block text-start">
+                            <h6 class="fw-bold text-danger">Our Vision</h6>
+                            <h1 class="hero-title titillium-web-bold text-justify">
+                                Driving Excellence in Engine Parts
+                            </h1>
+                            <p class="lh-3 mb-4" style="transition-delay: 0.2s">
+                                MTM Auto Spares is a leading supplier of high-quality engine parts for vehicles of all makes and models. 
+                                With more than 15 years of experience in the industry, we have built a reputation for excellence 
+                                and reliability. 
+                                <br><br>
+                                Our team is dedicated to providing the best possible service to our customers, 
+                                ensuring that they receive the right parts at the right time. We source our products from reputable 
+                                manufacturers to ensure that they meet the highest standards of quality and performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="img-wrapper rounded-4 shadow-sm overflow-hidden">
+                            <img src="assets/images/app/shop-location.jpg" alt="MTM Auto Spares Warehouse">
+                        </div>
+                    </div>
+                </div>
+                <!-- /.Our Vision -->
+            </div>
+            <!-- /.Vision Statement -->
+
+            <!-- Stats Section -->
+            <section class="stats-section border-top border-bottom mb-5 py-3">
+                <div class="container">
+                    <div class="row g-3">
+                        <div class="col text-center">
+                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2">15</h2>
+                            <h5 class="text-muted text-capitalize fw-bold">Years of Experience</h5>
+                        </div>
+                        <div class="col text-center">
+                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2">30</h2>
+                            <h5 class="text-muted text-capitalize fw-bold">Quality brands available</h5>
+                        </div>
+                        <div class="col text-center">
+                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2">1500</h2>
+                            <h5 class="text-muted text-capitalize fw-bold">engine parts in stock</h5>
+                        </div>
+                        <div class="col text-center">
+                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2">8400</h2>
+                            <h5 class="text-muted text-capitalize fw-bold">satisfied customers</h5>
+                        </div>
+                    </div>
+            </section>
+            <!-- /.Stats Section -->
+
+            <div class="row gx-5 align-items-lg-center my-5">
+                <div class="col-lg-6">
+                    <div class="img-wrapper rounded-4 shadow-sm overflow-hidden">
+                        <img src="assets/images/app/happy-customer-3.jpeg" alt="Happy Customer">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-block text-end">
+                        <h6 class="fw-bold text-danger">Our Motto</h6>
+                        <h2 class="hero-title titillium-web-bold text-justify">
+                            Our company strategy revolves around the customer.
+                        </h2>
+                        <p class="lh-3 mb-4" style="transition-delay: 0.2s">
+                            Our business is driven by listening to our customers and providing 
+                            them with what they desire. Our clients know us for providing: 
+                            Quality, Service and technical attention to detail, Professionalism, and Competitive pricing strategy compared to our rivals 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- /.Main Content -->
+
+    <!-- Footer -->
+    <footer class="footer shrink-0 bg-dark border-top text-white mt-5 pt-5" id="contact">
+        <div class="container-lg">
+            <div class="row gx-5">
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="navbar-brand logo-container text-capitalize text-center m-0 p-1">
+                        <h4 class="text-danger logo-title m-0 p-0">M.T.M</h4>
+                        <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
+                    </div>
+                    <p class="mt-3">Your trusted source for premium engine components and performance parts. We provide high-quality automotive parts with expert support.</p>
+                    <div class="text-center mt-3">
+                        <a href="https://wa.me/263772625028" class="text-white me-3" target="_blank">
+                            <i class="bi bi-whatsapp fs-1"></i>
+                        </a>
+                        <a href="https://m.me/+263772625028" class="text-white" target="_blank">
+                            <i class="bi bi-messenger fs-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 mb-3">
+                    <h6 class="fw-bold">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home">Home</a></li>
+                        <li class="mb-2"><a href="#products">Products</a></li>
+                        <li class="mb-2"><a href="#categories">Categories</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-8 col-md-5 mb-3">
+                    <h6 class="fw-bold">Contact Information</h6>
+                    <p><i class="bi bi-telephone me-2"></i> +263 77 262 5028</p>
+                    <p><i class="bi bi-envelope me-2"></i> info@mtmautoparts.com</p>
+                    <p><i class="bi bi-clock me-2"></i> Mon-Fri: 8am-6pm, Sat: 9am-4pm</p>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="row justify-conter-center justify-content-md-between g-0">
+                <div class="col-md-6">
+                    <small class="text-sm">&copy; 2025 M.T.M Auto Spares. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end mb-3">
+                        <a href="https://wa.me/263776021140">
+                            <small class="text-sm">Designed with ❤️ by TinaKing👑</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Animate On Scroll JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+</body>
+</html>
