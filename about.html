@@ -141,21 +141,21 @@
         <nav aria-label="breadcrumb" class="nav-breadcrumb container-fluid container-lg">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item page-title active" aria-current="page">Contact Us</li>
+                <li class="breadcrumb-item page-title active" aria-current="page">About Us</li>
             </ol>
         </nav>
         <!-- /.Breadcrumbs -->
 
         <div class="container-lg mt-3 mb-5">
             <!-- Page Title -->
-            <h1 class="display-6 titillium-web-bold page-title">About Us</h1>
+            <h1 class="display-6 titillium-web-bold page-title animate__animated animate__fadeInLeft animate__slow 3s">About Us</h1>
             <!-- /.Page Title -->
 
             <!-- Vision Statement -->
             <div class="container-lg mt-3 pb-5 px-lg-0">
                 <!-- Our Vision -->
                 <div class="row align-items-lg-center gx-5">
-                    <div class="col-lg-6 mb-5">
+                    <div class="col-lg-6 animate__animated animate__fadeInLeft animate__slow 3s mb-5">
                         <div class="d-block text-start">
                             <h6 class="fw-bold text-danger">Our Vision</h6>
                             <h1 class="hero-title titillium-web-bold text-justify">
@@ -173,7 +173,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 animate__animated animate__fadeInRight animate__slow 3s">
                         <div class="img-wrapper rounded-4 shadow-sm overflow-hidden">
                             <img src="assets/images/app/shop-location.jpg" alt="MTM Auto Spares Warehouse">
                         </div>
@@ -184,23 +184,23 @@
             <!-- /.Vision Statement -->
 
             <!-- Stats Section -->
-            <section class="stats-section border-top border-bottom mb-5 py-3">
+            <section class="stats-section border-top border-bottom scroll-animate mb-5 py-3">
                 <div class="container">
                     <div class="row g-3">
                         <div class="col-6 col-lg-3 text-center">
-                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2">15</h2>
+                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2" id="years-counter">0</h2>
                             <h5 class="text-muted text-capitalize fw-bold">Years of Experience</h5>
                         </div>
                         <div class="col-6 col-lg-3 text-center">
-                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2">30</h2>
+                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2" id="brands-counter">0</h2>
                             <h5 class="text-muted text-capitalize fw-bold">Quality brands available</h5>
                         </div>
                         <div class="col-6 col-lg-3 text-center">
-                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2">1500</h2>
+                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2" id="parts-counter">0</h2>
                             <h5 class="text-muted text-capitalize fw-bold">engine parts in stock</h5>
                         </div>
                         <div class="col-6 col-lg-3 text-center">
-                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2">8400</h2>
+                            <h2 class="hero-title titillium-web-bold text-danger stat-item mb-2" id="customers-counter">0</h2>
                             <h5 class="text-muted text-capitalize fw-bold">satisfied customers</h5>
                         </div>
                     </div>
@@ -208,13 +208,13 @@
             <!-- /.Stats Section -->
 
             <div class="row gx-5 align-items-lg-center my-5">
-                <div class="col-lg-6 mb-5">
+                <div class="col-lg-6 mb-5 scroll-animate">
                     <div class="img-wrapper rounded-4 shadow-sm overflow-hidden">
                         <img src="assets/images/app/happy-customer-3.jpeg" alt="Happy Customer">
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="d-block text-end">
+                    <div class="d-block text-end scroll-animate">
                         <h6 class="fw-bold text-danger">Our Motto</h6>
                         <h2 class="hero-title titillium-web-bold text-justify">
                             Our company strategy revolves around the customer.
@@ -290,5 +290,98 @@
     <!-- Swiper Slider JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- Custom JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollElements = document.querySelectorAll('.scroll-animate');
+            
+            const elementInView = (el, dividend = 1) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+                );
+            };
+            
+            const displayScrollElement = (element) => {
+                element.classList.add('visible');
+            };
+            
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 1.2)) {
+                        displayScrollElement(el);
+                    }
+                });
+            };
+            
+            // Initial check for elements already in view
+            handleScrollAnimation();
+            
+            // Listen for scroll events
+            window.addEventListener('scroll', () => {
+                handleScrollAnimation();
+            });
+            
+            // Animated counters
+            function animateCounter(elementId, finalValue, duration = 2000) {
+                let current = 0;
+                const increment = finalValue / (duration / 16); // 60fps
+                const element = document.getElementById(elementId);
+                
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < finalValue) {
+                        element.textContent = Math.floor(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        element.textContent = finalValue;
+                    }
+                };
+                
+                updateCounter();
+            }
+            
+            // Start counters when they come into view
+            const observerOptions = {
+                threshold: 0.5
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Start all counters
+                        animateCounter('years-counter', 15);
+                        animateCounter('brands-counter', 30);
+                        animateCounter('parts-counter', 1500);
+                        animateCounter('customers-counter', 8400);
+                        
+                        // Stop observing after animation starts
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe the stats section
+            const statsSection = document.querySelector('.stats-section');
+            observer.observe(statsSection);
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

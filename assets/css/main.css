@@ -14,7 +14,7 @@
   --primary-color: #cc0000;
   --gunmetal-color: #2c2c2c;
   --metallic-silver: #b0b0b0;
-  --text-muted: rgba(33, 37, 41, 0.75);
+  --text-muted: #212529bf;
   --white: #ffffff;
 }
 
@@ -73,6 +73,16 @@ body {
 
 .btn-view-type.active i {
   color: var(--primary-color);
+}
+
+.btn-outline-danger {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:active {
+  color: white;
 }
 
 /* Header */
@@ -253,6 +263,12 @@ nav.nav-breadcrumb>ol>li>a {
 /* Hero Section */
 .hero-title {
   font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+  font-size: 3.25rem;
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
@@ -451,6 +467,16 @@ nav.nav-breadcrumb>ol>li>a {
 
 .footer a:hover {
   color: white;
+}
+
+.footer a.popular-search-result {
+  color: var(--text-muted);
+  text-decoration: underline;
+}
+
+.footer a.popular-search-result:not(:first-child) {
+  margin-left: 1rem;
+  text-transform: capitalize;
 }
 
 .footer-divider {
@@ -672,39 +698,57 @@ nav.nav-breadcrumb>ol>li>a {
     font-size: 2.25rem;
     font-weight: 700;
   }
+
   h2, .h2 {
     font-size: 2rem;
     font-weight: 600;
   }
+
   h3, .h3 {
     font-size: 1.75rem;
     font-weight: 600;
   }
+
   h4, .h4 {
     font-size: 1.5rem;
     font-weight: 600;
   }
+
   h5, .h5 {
     font-size: 1.25rem;
     font-weight: 500;
   }
+
   h6, .h6 {
     font-size: 1rem;
     font-weight: 500;
   }
+
   .hero-title{
     font-size: 2.25rem;
     font-weight: 700;
   }
+
+  .hero-subtitle{
+    font-size: 1.625rem;
+    font-weight: 700;
+  }
+
   h2.section-heading{
     font-size: 2rem;
     font-weight: 600;
   }
+
+  #contact-page .card.contact-info h5 {
+    font-size: 1rem;
+  }
+
   p {
     font-size: 1rem !important;
     font-weight: 400;
     line-height: 1.5rem;
   }
+
   .small-label {
     font-size: 0.675rem;
     font-weight: 500;
