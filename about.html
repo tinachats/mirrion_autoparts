@@ -36,33 +36,40 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg bg-white border-body border-bottom p-0 t-0" data-bs-theme="light">
                 <div class="container-lg">
-                    <a class="btn bg-white d-md-none" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
-                        <i class="bi bi-list fw-bold fs-5"></i>
+                    <a class="btn bg-white" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
+                        <i class="material-icons fs-5">menu</i>
                     </a>
                     <a class="navbar-brand logo-container text-capitalize text-center m-0 p-1" href="index.html" role="button">
                         <h4 class="text-danger logo-title m-0 p-0">M.T.M</h4>
                         <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
                     </a>
                     <a class="btn bg-white d-md-none" data-bs-toggle="offcanvas" href="#search-page" role="button" aria-controls="search-page">
-                        <i class="bi bi-search fw-bold fs-5"></i>
+                        <i class="material-icons fw-bold fs-5">search</i>
                     </a>
                     <form class="d-none d-md-flex" id="search-input" role="search">
-                        <input class="form-control mx-2" type="search" placeholder="Search part..." aria-label="Search"/>
+                        <input class="form-control form-control mx-2" type="search" placeholder="Search part..." aria-label="Search"/>
                         <i class="bi bi-search"></i>
                     </form>
                     <div class="d-flex align-items-center justify-content-between">
                         <ul class="navbar-nav">
-                            <li class="nav-item d-none d-lg-inline-block">
-                                <a class="nav-link active" aria-current="page" href="#">New Arrivals</a>
-                            </li>
-                            <li class="nav-item d-none d-md-inline-block">
-                                <a class="nav-link" href="special-offers.html">Special Offers</a>
-                            </li>
-                            <li class="nav-item d-none d-md-inline-block">
+                            <li class="nav-item d-none d-xl-inline-block">
                                 <a class="nav-link" href="about.html">About Us</a>
                             </li>
-                            <li class="nav-item d-none d-md-inline-block">
+                            <li class="nav-item d-none d-lg-inline-block">
                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item d-none d-md-inline-block">
+                                <a class="nav-link" href="catefory.html">Special Offers</a>
+                            </li>
+                            <li class="nav-item d-none d-xl-inline-block">
+                                <a class="nav-link" href="contact.html">
+                                    <span class="text-danger">+263</span> 77 262 5028
+                                </a>
+                            </li>
+                            <li class="nav-item d-none d-md-inline-block request-part-link">
+                                <button class="nav-link btn btn-outline-danger px-md-2 px-lg-3" data-bs-toggle="modal" data-bs-target="#request-part-modal">
+                                    Request A Part
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -120,6 +127,12 @@
                             Special Offers
                         </a>
                     </li>
+                    <li class="list-group-item d-md-none">
+                        <a href="#request-part-modal"  data-bs-toggle="modal">
+                            <i class="bi bi-gear me-3"></i>
+                            Request a part
+                        </a>
+                    </li>
                     <li class="list-group-item">
                         <a href="about.html">
                             <i class="bi bi-info-circle me-3"></i>
@@ -136,6 +149,130 @@
             </div>
         </div>
         <!-- /.Side Bar -->
+
+        <!-- Request Part Modal -->
+        <div class="modal modal-dialog-scrollable fade" id="request-part-modal" tabindex="-1" aria-labelledby="requestPartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title titillium-web-bold" id="requestPartModalLabel">Request A Part</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <!-- First Name -->
+                            <div class="col-6">
+                                <label for="first-name-modal" class="form-label">First name</label>
+                                <input type="text" class="form-control form-control-lg" id="first-name-modal" value="" required>
+                                <div class="invalid-feedback">
+                                    First name required!        
+                                </div>
+                            </div>
+                            <!-- /.First Name -->
+                            <!-- Last Name -->
+                            <div class="col-6">
+                                <label for="last-name-modal" class="form-label">Last name</label>
+                                <input type="text" class="form-control form-control-lg" id="last-name-modal" value="" required>
+                                <div class="invalid-feedback">
+                                    Last name required! 
+                                </div>
+                            </div>
+                            <!-- /.Last Name -->
+                            <!-- Email -->
+                            <div class="col-6">
+                                <label for="email-modal" class="form-label">Email</label>
+                                <input type="email" class="form-control form-control-lg" id="email-modal" value="" required>
+                                <div class="invalid-feedback">
+                                    Email required! 
+                                </div>  
+                            </div>
+                            <!-- /.Email -->
+                            <!-- Mobile Number -->
+                            <div class="col-6">
+                                <label for="mobile-modal" class="form-label">Mobile</label>
+                                <input type="tel" class="form-control form-control-lg" id="mobile-modal" value="" required>
+                                <div class="invalid-feedback">
+                                    Mobile number required! 
+                                </div>
+                            </div>
+                            <!-- /.Mobile Number -->
+                            <!-- Parts Quantity -->
+                            <div class="col-6">
+                                <label for="parts-quantity-modal" class="form-label">Part(s) Needed</label>
+                                <input type="number" class="form-control form-control-lg" id="parts-quantity-modal" value="" required>
+                                <div class="invalid-feedback">
+                                    Parts quantity required! 
+                                </div>  
+                            </div>
+                            <!-- /.Parts Quantity -->
+                            <!-- Vehicle Make -->
+                            <div class="col-6">
+                                <label for="vehicle-make-modal" class="form-label">Vehicle Make</label>
+                                <input type="text" class="form-control form-control-lg" id="vehicle-make-modal" value="" required>
+                                <div class="invalid-feedback">
+                                    Vehicle make required! 
+                                </div>
+                            </div>
+                            <!-- /.Vehicle Make -->
+                            <!-- Vehicle Model -->
+                            <div class="col-6">
+                                <label for="vehicle-model-modal" class="form-label">Part(s) Needed</label>
+                                <input type="text" class="form-control form-control-lg" id="vehicle-model-modal" value="" required>
+                                <div class="invalid-feedback">
+                                    Vehicle model required! 
+                                </div>  
+                            </div>
+                            <!-- /.Vehicle Model -->
+                            <!-- Year of Manufacture -->
+                            <div class="col-6">
+                                <label for="manufactured-year-modal" class="form-label">Year of Manufacture</label>
+                                <select class="form-select" id="manufactured-year-modal" required>
+                                    <option selected disabled value="">Please select year</option>
+                                    <option>2025</option>
+                                    <option>2024</option>
+                                    <option>2023</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Vehicle manufactured year required!
+                                </div>
+                            </div>
+                            <!-- /.Year of Manufacture -->
+                            <!-- Engine Capacity -->
+                            <div class="col-6">
+                                <label for="engine-capacity-modal" class="form-label">Engine Capacity</label>
+                                <input type="text" class="form-control form-control-lg" id="engine-capacity-modal" value="" required>
+                                <div class="invalid-feedback">
+                                    Engine Capacity required! 
+                                </div>  
+                            </div>
+                            <!-- /.Engine Capacity Required -->
+                            <!-- Engine Code -->
+                            <div class="col-6">
+                                <label for="engine-code-modal" class="form-label">Engine code</label>
+                                <input type="text" class="form-control form-control-lg" id="engine-code-modal" value="" required>
+                                <div class="invalid-feedback">
+                                    Engine code required! 
+                                </div>
+                            </div>
+                            <!-- /.Engine Code -->
+                            <!-- Part Details -->
+                            <div class="col-12">
+                                <label for="part-details" class="form-label">Part Details</label>
+                                <textarea class="form-control form-control-lg" placeholder="Type in the part details here" id="part-details" style="height: 100px" required></textarea>
+                                <div class="invalid-feedback">
+                                    Add part details! 
+                                </div>
+                            </div>
+                            <!-- /.Part Details -->
+                            <div class="col-12 text-start">
+                                <button class="btn btn-lg btn-danger" type="submit">Submit Request</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.Request Part Modal -->
 
         <!-- Breadcrumbs -->
         <nav aria-label="breadcrumb" class="nav-breadcrumb container-fluid container-lg">
@@ -232,46 +369,117 @@
     <!-- /.Main Content -->
 
     <!-- Footer -->
-    <footer class="footer shrink-0 bg-dark border-top text-white mt-5 pt-5" id="contact">
-        <div class="container-lg">
-            <div class="row gx-5">
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="navbar-brand logo-container text-capitalize text-center m-0 p-1">
-                        <h4 class="text-danger logo-title m-0 p-0">M.T.M</h4>
-                        <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
-                    </div>
-                    <p class="mt-3">Your trusted source for premium engine components and performance parts. We provide high-quality automotive parts with expert support.</p>
-                    <div class="text-center mt-3">
-                        <a href="https://wa.me/263772625028" class="text-white me-3" target="_blank">
-                            <i class="bi bi-whatsapp fs-1"></i>
-                        </a>
-                        <a href="https://m.me/+263772625028" class="text-white" target="_blank">
-                            <i class="bi bi-messenger fs-1"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-4 col-md-3 mb-3">
-                    <h6 class="fw-bold">Quick Links</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#home">Home</a></li>
-                        <li class="mb-2"><a href="#products">Products</a></li>
-                        <li class="mb-2"><a href="#categories">Categories</a></li>
-                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-8 col-md-5 mb-3">
-                    <h6 class="fw-bold">Contact Information</h6>
-                    <p><i class="bi bi-telephone me-2"></i> +263 77 262 5028</p>
-                    <p><i class="bi bi-envelope me-2"></i> info@mtmautoparts.com</p>
-                    <p><i class="bi bi-clock me-2"></i> Mon-Fri: 8am-6pm, Sat: 9am-4pm</p>
+    <footer class="footer border-top">
+        <!-- Popular Searches -->
+        <div class="container-lg bg-light py-3">
+            <div class="d-flex align-items-center w-100">
+                <h5 class="fw-bold text-dark my-0 me-3">Popular Searches:</h5>
+                <div class="nav-scroller container"> 
+                    <nav class="nav" aria-label="Secondary navigation"> 
+                        <a class="nav-link" href="product.html">O2 Sensor</a> 
+                        <a class="nav-link" href="product.html">Camshaft Position Sensor</a> 
+                        <a class="nav-link" href="product.html">Crankshaft Position Sensor</a> 
+                        <a class="nav-link" href="product.html">Throttle Position Sensor</a> 
+                        <a class="nav-link" href="product.html">Tire Pressure Sensor</a> 
+                    </nav> 
                 </div>
             </div>
-            <div class="footer-divider"></div>
-            <div class="row justify-conter-center justify-content-md-between g-0">
-                <div class="col-md-6">
-                    <small class="text-sm">&copy; 2025 M.T.M Auto Spares. All rights reserved.</small>
+        </div>
+        <!-- /.Popular Searches -->
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-section border-top">
+            <div class="row g-0">
+                <div class="col-md-4 col-lg-6 col-xl-5">
+                    <div class="newsletter-img-wrapper">
+                        <img src="assets/images/app/piston-hd.jpg" alt="Engine Parts">
+                    </div>
                 </div>
-                <div class="col-md-6 text-center text-md-end mb-3">
+                <div class="col-md-8 col-lg-6 col-xl-7 d-flex flex-column justify-content-center mb-4 mb-md-0">
+                    <div class="d-flex justify-content-start justify-content-center justify-content-xl-start">
+                        <div class="d-block text-start w-75">
+                            <div class="d-block my-4 mt-md-0 mb-xl-5">
+                                <h2 class="fs-2 titillium-web-semibold text-dark">
+                                    Subscribe the 
+                                    <span class="text-uppercase text-danger bg-white px-2">Newsletter</span>
+                                </h2>
+                                <h6 class="text-muted">
+                                    Subscribe today and never miss out on discounts, new product launches, 
+                                    and insider knowledge from our specialists.
+                                </h6>
+                            </div>
+                            <form class="needs-validation" novalidate>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Enter Your Email" aria-label="email-address" aria-describedby="btn-submit-newsletter" required>
+                                    <button class="btn btn-danger" type="submit" id="btn-submit-newsletter">Sign Up</button>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Email address required!
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.Newsletter Section -->
+
+        <!-- Base Footer -->
+        <div class="base-footer bg-dark text-white pt-5">
+            <div class="container-lg">
+                <div class="row justify-content-between gx-md-3 gx-xl-5">
+                    <div class="col-8 col-md-6 col-lg-3 mb-3">
+                        <div class="navbar-brand logo-container text-capitalize text-center m-0 p-1">
+                            <h4 class="text-danger logo-title m-0 p-0">M.T.M</h4>
+                            <p class="text-capitalize logo-subtitle">-truck engine parts-</p>
+                        </div>
+                        <p class="mt-3">Your trusted source for premium engine components and performance parts. We provide high-quality automotive parts with expert support.</p>
+                        <div class="text-center my-3">
+                            <a href="https://wa.me/263772625028" class="text-white me-3" target="_blank">
+                                <i class="bi bi-whatsapp fs-1"></i>
+                            </a>
+                            <a href="https://m.me/+263772625028" class="text-white me-3" target="_blank">
+                                <i class="bi bi-messenger fs-1"></i>
+                            </a>
+                            <a href="https://facebook.com/mtmautospares" class="text-white me-3" target="_blank">
+                                <i class="bi bi-facebook fs-1"></i>
+                            </a>
+                            <a href="https://instagram.com/mtmautospares" class="text-white" target="_blank">
+                                <i class="bi bi-instagram fs-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-3">
+                        <h6 class="fw-bold">Quick Links</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#home">Home</a></li>
+                            <li class="mb-2"><a href="#products">Products</a></li>
+                            <li class="mb-2"><a href="#categories">Categories</a></li>
+                            <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-3">
+                        <h6 class="fw-bold">Products</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#products">Pistons</a></li>
+                            <li class="mb-2"><a href="#products">Engine Cylinders</a></li>
+                            <li class="mb-2"><a href="#products">Engine Blocks</a></li>
+                            <li class="mb-2"><a href="#products">Liners/Sleeves</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-3">
+                        <h6 class="fw-bold">Contact Information</h6>
+                        <p><i class="bi bi-telephone me-2"></i> +263 77 262 5028</p>
+                        <p><i class="bi bi-envelope me-2"></i> info@mtmautospares.co.zw</p>
+                        <p><i class="bi bi-clock me-2"></i> Mon-Fri: 8am-6pm, Sat: 9am-4pm</p>
+                    </div>
+                </div>
+                <div class="footer-divider my-2 my-"></div>
+                <div class="row justify-conter-center justify-content-md-between g-0">
+                    <div class="col-md-6 text-center text-md-start">
+                        <small class="text-sm">&copy; 2025 M.T.M Auto Spares. All rights reserved.</small>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mb-3">
                         <a href="https://wa.me/263776021140">
                             <small class="text-sm">Designed with ❤️ by TinaKing👑</small>
                         </a>
@@ -279,6 +487,7 @@
                 </div>
             </div>
         </div>
+        <!-- /.Base Footer -->
     </footer>
     <!-- /.Footer -->
 

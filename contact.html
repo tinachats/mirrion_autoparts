@@ -423,24 +423,63 @@
     <!-- /.Main Content -->
     
     <!-- Footer -->
-    <footer class="footer border-top text-white">
+    <footer class="footer border-top">
         <!-- Popular Searches -->
-        <div class="container-lg bg-light py-5">
-            <div class="d-flex align-items-center">
+        <div class="container-lg bg-light py-3">
+            <div class="d-flex align-items-center w-100">
                 <h5 class="fw-bold text-dark my-0 me-3">Popular Searches:</h5>
-                <div class="d-flex align-items-center" id="popular-searches-results">
-                    <a href="products.html" class="popular-search-result">O2 Sensor</a>
-                    <a href="products.html" class="popular-search-result">Camshaft Position sensor</a>
-                    <a href="products.html" class="popular-search-result">Throttle Position Sensor</a>
-                    <a href="products.html" class="popular-search-result">Tire pressure sensor</a>
-                    <a href="products.html" class="popular-search-result">crankshaft position sensor</a>
+                <div class="nav-scroller container"> 
+                    <nav class="nav" aria-label="Secondary navigation"> 
+                        <a class="nav-link" href="product.html">O2 Sensor</a> 
+                        <a class="nav-link" href="product.html">Camshaft Position Sensor</a> 
+                        <a class="nav-link" href="product.html">Crankshaft Position Sensor</a> 
+                        <a class="nav-link" href="product.html">Throttle Position Sensor</a> 
+                        <a class="nav-link" href="product.html">Tire Pressure Sensor</a> 
+                    </nav> 
                 </div>
             </div>
         </div>
         <!-- /.Popular Searches -->
 
+        <!-- Newsletter Section -->
+        <div class="newsletter-section border-top">
+            <div class="row g-0">
+                <div class="col-md-4 col-lg-6 col-xl-5">
+                    <div class="newsletter-img-wrapper">
+                        <img src="assets/images/app/piston-hd.jpg" alt="Engine Parts">
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-7 d-flex flex-column justify-content-center mb-4 mb-md-0">
+                    <div class="d-flex justify-content-start justify-content-center justify-content-xl-start">
+                        <div class="d-block text-start w-75">
+                            <div class="d-block my-4 mt-md-0 mb-xl-5">
+                                <h2 class="fs-2 titillium-web-semibold text-dark">
+                                    Subscribe the 
+                                    <span class="text-uppercase text-danger bg-white px-2">Newsletter</span>
+                                </h2>
+                                <h6 class="text-muted">
+                                    Subscribe today and never miss out on discounts, new product launches, 
+                                    and insider knowledge from our specialists.
+                                </h6>
+                            </div>
+                            <form class="needs-validation" novalidate>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Enter Your Email" aria-label="email-address" aria-describedby="btn-submit-newsletter" required>
+                                    <button class="btn btn-danger" type="submit" id="btn-submit-newsletter">Sign Up</button>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Email address required!
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.Newsletter Section -->
+
         <!-- Base Footer -->
-        <div class="base-footer bg-dark pt-5">
+        <div class="base-footer bg-dark text-white pt-5">
             <div class="container-lg">
                 <div class="row justify-content-between gx-md-3 gx-xl-5">
                     <div class="col-8 col-md-6 col-lg-3 mb-3">

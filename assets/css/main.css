@@ -110,8 +110,11 @@ header.header {
 .nav-scroller {
   position: relative;
   z-index: 2;
-  height: 2.75rem;
   overflow-y: hidden;
+}
+
+.nav-scroller {
+  height: 2.75rem;
 }
 
 .nav-scroller .nav {
@@ -459,6 +462,13 @@ nav.nav-breadcrumb>ol>li>a {
 }
 
 /* Footer */
+.footer>.newsletter-section {
+  background: url('../images/app/hero-bg.jpg') bottom right no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+  background-size: auto;
+  background-size: cover;
+}
+
 .footer a {
   color: rgba(255,255,255,0.8);
   text-decoration: none;
@@ -469,14 +479,12 @@ nav.nav-breadcrumb>ol>li>a {
   color: white;
 }
 
-.footer a.popular-search-result {
+.footer .nav-scroller a.nav-link {
   color: var(--text-muted);
   text-decoration: underline;
-}
-
-.footer a.popular-search-result:not(:first-child) {
-  margin-left: 1rem;
   text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .footer-divider {
@@ -686,6 +694,19 @@ nav.nav-breadcrumb>ol>li>a {
 
   #about-page .img-wrapper {
     height: 350px;
+  }
+
+  .footer>.newsletter-section .newsletter-img-wrapper{
+    height: 150px !important;
+  }
+
+  .footer>.newsletter-section h2.fs-2{
+    font-size: 1.25rem !important;
+  }
+
+  .footer>.newsletter-section h6{
+    font-size: .875rem !important;
+    margin-top: .5rem;
   }
 
   /* Typography */
@@ -922,6 +943,24 @@ nav.nav-breadcrumb>ol>li>a {
   .swiper-slide>.product-card .product-img-container{
     position: relative;
     height: 180px;
+  }
+
+  .footer>.newsletter-section .input-group {
+    height: 60px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .footer>.newsletter-section .newsletter-img-wrapper{
+    width: 100%;
+    height: 250px;
+  }
+
+  .footer>.newsletter-section .newsletter-img-wrapper>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
